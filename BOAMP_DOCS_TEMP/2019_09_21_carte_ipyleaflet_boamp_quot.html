@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2019_09_21_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "0cc068930d8d42c2aa874fee86a02e08": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "5794a38949bc4cf9be354edf61299089": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "4fa2c3cfd47d4283baf67aba38a8a1ea": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "a2b062ae78634639a367a0154ed158b4": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "0e9957a516a445fa925788698d99b276": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size"
+        ]
+      }
+    },
+    "4c28dbeb4ceb4bc08862655679f92b2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6fde66761a1c4535be347ac1b65c95c2": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "c242ec212e264a048c9760fe0aaa17c8": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "_dom_classes": [],
+        "basemap": {
+          "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "max_zoom": 19,
+          "attribution": "Map data (c) <a href=\"https://openstreetmap.org\">OpenStreetMap</a> contributors"
+        },
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_0cc068930d8d42c2aa874fee86a02e08",
+          "IPY_MODEL_5794a38949bc4cf9be354edf61299089",
+          "IPY_MODEL_d16ba9d42b7c4348a37e07c4e88ba792"
+        ],
+        "default_style": "IPY_MODEL_4fa2c3cfd47d4283baf67aba38a8a1ea",
+        "dragging_style": "IPY_MODEL_a2b062ae78634639a367a0154ed158b4",
+        "layers": [
+          "IPY_MODEL_0e9957a516a445fa925788698d99b276",
+          "IPY_MODEL_2e100da87cc94cf4a47672604a0e6e69",
+          "IPY_MODEL_4723ce2c543d4f51808a74cf8c4b5a03",
+          "IPY_MODEL_1e0133b0e374429b9870a6ff027a480f",
+          "IPY_MODEL_6ef0987ed5c244049e673d25bce0e07f",
+          "IPY_MODEL_1c82469b7a8c4526a6d784f8ea0ab9a8",
+          "IPY_MODEL_3b572b7baa254bd8a84e028497e8375b",
+          "IPY_MODEL_dc639506a42f48958a194c19dbffac29",
+          "IPY_MODEL_aea2f17fdf4f48768aae3b632d3dfc46",
+          "IPY_MODEL_7f5569015f4d41e3accc43ba9e944a3b",
+          "IPY_MODEL_958ed89bb8f04561b8bb17d9316f4ae8",
+          "IPY_MODEL_9346842bfa2246f7b826dc720ee69371",
+          "IPY_MODEL_da4335467e894be79799895507cde615",
+          "IPY_MODEL_18ad6d9d68964b2d997dd9932d0ef99c",
+          "IPY_MODEL_49a91b8e84ae436d89c737779a0ef9fd",
+          "IPY_MODEL_4c91e5cfa3e34fed8ec15f55f4515de3",
+          "IPY_MODEL_b89673afd83b4836a59d9009485e59d1",
+          "IPY_MODEL_4089fe6917c84cef967bb86402009dfe",
+          "IPY_MODEL_b9a5e3ba92dd47fd8e182e3011cf8fc1",
+          "IPY_MODEL_ca07eff90e8340d4b841d5e526181471",
+          "IPY_MODEL_99f8f1773bde438daa5d1f5dc1a23301",
+          "IPY_MODEL_465264cbbd024423b80fdd68debe10bd",
+          "IPY_MODEL_5ce19cbd20bd4980a0e58d948646062e",
+          "IPY_MODEL_cb9a9150194c4ab8937202196efcd8d8",
+          "IPY_MODEL_d27bc39f988b4160a577a0417b99b5c0",
+          "IPY_MODEL_8e429ca4af4d415093d07a8271465bba",
+          "IPY_MODEL_f53dee1a856e4501b75c66c8c3e2db47",
+          "IPY_MODEL_874c8877d7dc4357b4eb087ba99211cc",
+          "IPY_MODEL_6463cd2e528947fa82250b21a832d612",
+          "IPY_MODEL_3e395afc66b4494991ac2dd6a018a9f9",
+          "IPY_MODEL_5618f7f05f4a4aada2a2318b3e18a0b4",
+          "IPY_MODEL_2d4a037b52a34a168fedfb38596e6750",
+          "IPY_MODEL_c81fd024ae9f43ad9850d0f7acd9d5f7",
+          "IPY_MODEL_87e678c547f94363a30c069cef6dfc74",
+          "IPY_MODEL_f8ad79b5640d4cc6bb3b58a0d2046837",
+          "IPY_MODEL_2288b1af68b54ecf897cf2ddc8ba59cc",
+          "IPY_MODEL_94f39295f800488784e6b52464528e14",
+          "IPY_MODEL_ec14188e7a4645d68cc469518c2a8a8c"
+        ],
+        "layout": "IPY_MODEL_4c28dbeb4ceb4bc08862655679f92b2d",
+        "options": [
+          "basemap",
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_6fde66761a1c4535be347ac1b65c95c2",
+        "zoom": 6
+      }
+    },
+    "d16ba9d42b7c4348a37e07c4e88ba792": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "2e100da87cc94cf4a47672604a0e6e69": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.2967099637",
+          " 4.07827967525"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6d11a154b7dc4b228496915f1bb7b571",
+        "title": "Vers TROYES :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: AMENAGEMENT FONCIER AGRICOLE, FORESTIER ET ENVIRONNEMENTAL D'AVANT-LES-MARCILLY..\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "55e688b2a2e54d03bc8e8c0ba9706312": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d2b6e940d98b48e8a431f236d19abd99": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6d11a154b7dc4b228496915f1bb7b571": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_55e688b2a2e54d03bc8e8c0ba9706312",
+        "style": "IPY_MODEL_d2b6e940d98b48e8a431f236d19abd99",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142618\" target=\"_blank\"> 19-142618</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1574895600000<br>\n        <b>D\u00e9partement de publication :</b> ['10']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> DEPARTEMENT DE L AUBE<br>\n        <b>Ville :</b> TROYES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> AMENAGEMENT FONCIER AGRICOLE, FORESTIER ET ENVIRONNEMENTAL D'AVANT-LES-MARCILLY.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142618\" target=\"_blank\"> 19-142618</a><br>\n        <div>"
+      }
+    },
+    "4723ce2c543d4f51808a74cf8c4b5a03": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.7176409517",
+          " 5.30157633559"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_72b15c799d9b441aaeab083feabbcaa6",
+        "title": "Vers La roque d'anth\u00e9ron :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: travaux de r\u00e9habilitation, restructuration et extension de l'ime le colombier - reconsultation des lots infructueux.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "41ab3f09adad496b8e8f39a5f3b79eff": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4478eb8346d34dcfbeb872e203006083": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "72b15c799d9b441aaeab083feabbcaa6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_41ab3f09adad496b8e8f39a5f3b79eff",
+        "style": "IPY_MODEL_4478eb8346d34dcfbeb872e203006083",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-143774\" target=\"_blank\"> 19-143774</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571263200000<br>\n        <b>D\u00e9partement de publication :</b> ['13']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Institut Medico Educatif Le Colombier<br>\n        <b>Ville :</b> La roque d'anth\u00e9ron<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Charpente', 'Cloison, faux plafond', 'Menuiserie', 'Peinture (travaux)', 'Serrurerie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> travaux de r\u00e9habilitation, restructuration et extension de l'ime le colombier - reconsultation des lots infructueux<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-143774\" target=\"_blank\"> 19-143774</a><br>\n        <div>"
+      }
+    },
+    "1e0133b0e374429b9870a6ff027a480f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "46.0634336642",
+          " -0.695728258066"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ccc475f121f94b0e8c8b8778865b8c2a",
+        "title": "Vers Surgeres :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Traitement De L'Exc\u00e9dent Des D\u00e9chets M\u00e9nagers.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "9b0e088b710e4c78baf3e0c06c324fc7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8232fff0613940b98adf4b005de674e7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ccc475f121f94b0e8c8b8778865b8c2a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9b0e088b710e4c78baf3e0c06c324fc7",
+        "style": "IPY_MODEL_8232fff0613940b98adf4b005de674e7",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142754\" target=\"_blank\"> 19-142754</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571868000000<br>\n        <b>D\u00e9partement de publication :</b> ['17']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SYNDICAT MIXTE CYCLAD<br>\n        <b>Ville :</b> Surgeres<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Ordures m\u00e9nag\u00e8res (prestations)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Traitement De L'Exc\u00e9dent Des D\u00e9chets M\u00e9nagers<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142754\" target=\"_blank\"> 19-142754</a><br>\n        <div>"
+      }
+    },
+    "6ef0987ed5c244049e673d25bce0e07f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "47.1889382841",
+          " 5.3514431505"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cf5156f40d814c44ab462e7ed1ca4eb4",
+        "title": "Vers Auxonne :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: souscription aux contrats d'assurances de la commune d'auxonne (rectificatif).\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "a488b844492b4e178d0a47356c7b59d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0362bf3a14ce4ed097efe84c67b13948": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cf5156f40d814c44ab462e7ed1ca4eb4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a488b844492b4e178d0a47356c7b59d4",
+        "style": "IPY_MODEL_0362bf3a14ce4ed097efe84c67b13948",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142227\" target=\"_blank\"> 19-142227</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571349600000<br>\n        <b>D\u00e9partement de publication :</b> ['21']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> MAIRIE D'AUXONNE<br>\n        <b>Ville :</b> Auxonne<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> souscription aux contrats d'assurances de la commune d'auxonne (rectificatif)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142227\" target=\"_blank\"> 19-142227</a><br>\n        <div>"
+      }
+    },
+    "1c82469b7a8c4526a6d784f8ea0ab9a8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "44.9229811667",
+          " 4.91444013136"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c4c7d82f01704bb9bb4d5fa09794f646",
+        "title": "Vers Valence :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: 182212 -Prestation De Transport Collectif Avec Chauffeur.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "97f383b4fa3b42369e8d278f0836c6cc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bc50212fac244ef1809e4d6d7f6b6d05": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c4c7d82f01704bb9bb4d5fa09794f646": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_97f383b4fa3b42369e8d278f0836c6cc",
+        "style": "IPY_MODEL_bc50212fac244ef1809e4d6d7f6b6d05",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142772\" target=\"_blank\"> 19-142772</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1576537200000<br>\n        <b>D\u00e9partement de publication :</b> ['26']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> VALENCE ROMANS SUD RHONE-ALPES<br>\n        <b>Ville :</b> Valence<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Transport']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> 182212 -Prestation De Transport Collectif Avec Chauffeur<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142772\" target=\"_blank\"> 19-142772</a><br>\n        <div>"
+      }
+    },
+    "3b572b7baa254bd8a84e028497e8375b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.4004997828",
+          " -4.5027907853"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_739fb5ab066745a5ae4eaed1fee899be",
+        "title": "Vers Brest :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: OP 18AGHH - Lyc\u00e9e Tristan Corbi\u00e8re \u00e0 Morlaix - construction d'un b\u00e2timent neuf.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "ccf656f067e2438882b4b949080d77ae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "83c8cc01f5d04350bf41d55992af53a2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "739fb5ab066745a5ae4eaed1fee899be": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ccf656f067e2438882b4b949080d77ae",
+        "style": "IPY_MODEL_83c8cc01f5d04350bf41d55992af53a2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142707\" target=\"_blank\"> 19-142707</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1570053600000<br>\n        <b>D\u00e9partement de publication :</b> ['29', '22', '35', '56']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SEMBREIZH<br>\n        <b>Ville :</b> Brest<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> OP 18AGHH - Lyc\u00e9e Tristan Corbi\u00e8re \u00e0 Morlaix - construction d'un b\u00e2timent neuf<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142707\" target=\"_blank\"> 19-142707</a><br>\n        <div>"
+      }
+    },
+    "dc639506a42f48958a194c19dbffac29": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "44.7915990521",
+          " -0.676303166277"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_cc37f98b7b6e4a33aa1447c00d1d2d22",
+        "title": "Vers Pessac :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: A63-013.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "9d67234ea9124279a8cf007d7f55a9bc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "20df55128e7f4c72ba0ea53245acfd05": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cc37f98b7b6e4a33aa1447c00d1d2d22": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9d67234ea9124279a8cf007d7f55a9bc",
+        "style": "IPY_MODEL_20df55128e7f4c72ba0ea53245acfd05",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142588\" target=\"_blank\"> 19-142588</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1572303600000<br>\n        <b>D\u00e9partement de publication :</b> ['40', '33']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Atlandes<br>\n        <b>Ville :</b> Pessac<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Mat\u00e9riaux routiers']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> A63-013<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142588\" target=\"_blank\"> 19-142588</a><br>\n        <div>"
+      }
+    },
+    "aea2f17fdf4f48768aae3b632d3dfc46": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.3917705831",
+          " 3.64705148296"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_61eeaa2e890445b38290125c9d06e91d",
+        "title": "Vers Sete :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: R\u00e9servation de 06 berceaux en structure multi accueil petite enfance.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "50466ecf50ca4f7c9d3a7540f91567f8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "caaf963d2f6b4a60baa3151e2c6dfbbe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "61eeaa2e890445b38290125c9d06e91d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_50466ecf50ca4f7c9d3a7540f91567f8",
+        "style": "IPY_MODEL_caaf963d2f6b4a60baa3151e2c6dfbbe",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142903\" target=\"_blank\"> 19-142903</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1570658400000<br>\n        <b>D\u00e9partement de publication :</b> ['34']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CENTRE COMMUNAL D ACTION SOCIALE<br>\n        <b>Ville :</b> Sete<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> R\u00e9servation de 06 berceaux en structure multi accueil petite enfance<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142903\" target=\"_blank\"> 19-142903</a><br>\n        <div>"
+      }
+    },
+    "7f5569015f4d41e3accc43ba9e944a3b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.6820481757",
+          " 4.13566472301"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_70cdbcab492546f694a5e68fdbd895d2",
+        "title": "Vers Lunel :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Renouvellement des contrats d'assurances de la Communaut\u00e9 de Communes du Pays de Lunel: dommages aux biens, responsabilit\u00e9 civile, parc automobile..\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "c0b74f5df22948a4bef422c4ecc6497f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "71837afd095e40afb0b63b8e17ef86bc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "70cdbcab492546f694a5e68fdbd895d2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c0b74f5df22948a4bef422c4ecc6497f",
+        "style": "IPY_MODEL_71837afd095e40afb0b63b8e17ef86bc",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142907\" target=\"_blank\"> 19-142907</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1572476400000<br>\n        <b>D\u00e9partement de publication :</b> ['34', '75']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Communaut\u00e9 de Communes Pays de Lunel<br>\n        <b>Ville :</b> Lunel<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Renouvellement des contrats d'assurances de la Communaut\u00e9 de Communes du Pays de Lunel: dommages aux biens, responsabilit\u00e9 civile, parc automobile.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142907\" target=\"_blank\"> 19-142907</a><br>\n        <div>"
+      }
+    },
+    "958ed89bb8f04561b8bb17d9316f4ae8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "45.1930502486",
+          " 5.67763066542"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_45c97273faa34f7a979fc6deaa9ca3e2",
+        "title": "Vers FONTAINE :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Concours de ma\u00eetrise d'oeuvre pour la construction d'une caserne de sapeurs-pompiers et d'un centre d'entretien routier sur la commune de Vinay (38 470).\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "24a97827301c4f44a424bac17316d360": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1eff72ef738b411b871bd2d71d2d0635": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "45c97273faa34f7a979fc6deaa9ca3e2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_24a97827301c4f44a424bac17316d360",
+        "style": "IPY_MODEL_1eff72ef738b411b871bd2d71d2d0635",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142431\" target=\"_blank\"> 19-142431</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571695200000<br>\n        <b>D\u00e9partement de publication :</b> ['38']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SDIS de l'Is\u00e8re<br>\n        <b>Ville :</b> FONTAINE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent', \"Ma\u00eetrise d'oeuvre\", 'Ing\u00e9nierie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Concours de ma\u00eetrise d'oeuvre pour la construction d'une caserne de sapeurs-pompiers et d'un centre d'entretien routier sur la commune de Vinay (38 470)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142431\" target=\"_blank\"> 19-142431</a><br>\n        <div>"
+      }
+    },
+    "9346842bfa2246f7b826dc720ee69371": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "46.55692328",
+          " 6.01610878304"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_308db8d28b76412aba8427ab163913be",
+        "title": "Vers Hauts-de-Bienne :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Mission de ma\u00eetrise d'oeuvre pour l'am\u00e9nagement des berges de la Bienne, projet urbain \" l'Echapp\u00e9e Bienne \".\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "cb642b367c8c456a94f6629571c2e291": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6cae11867dde400d8b126608b9216de2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "308db8d28b76412aba8427ab163913be": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_cb642b367c8c456a94f6629571c2e291",
+        "style": "IPY_MODEL_6cae11867dde400d8b126608b9216de2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142603\" target=\"_blank\"> 19-142603</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1574204400000<br>\n        <b>D\u00e9partement de publication :</b> ['39']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE HAUTS DE BIENNE<br>\n        <b>Ville :</b> Hauts-de-Bienne<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission de ma\u00eetrise d'oeuvre pour l'am\u00e9nagement des berges de la Bienne, projet urbain \" l'Echapp\u00e9e Bienne \"<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142603\" target=\"_blank\"> 19-142603</a><br>\n        <div>"
+      }
+    },
+    "da4335467e894be79799895507cde615": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "44.6824882751",
+          " 2.0138257443"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bfcad79fead9448cb1b4fa1f8e74456c",
+        "title": "Vers Figeac :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: Etude de mise en oeuvre des travaux de pr\u00e9vention des inondations sur le bassin du Riou Mort.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "5fe0bc592b64461386237da605718500": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b3d2a3df142d4c00a666c883e6cc0cc1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bfcad79fead9448cb1b4fa1f8e74456c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_5fe0bc592b64461386237da605718500",
+        "style": "IPY_MODEL_b3d2a3df142d4c00a666c883e6cc0cc1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142924\" target=\"_blank\"> 19-142924</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1569880800000<br>\n        <b>D\u00e9partement de publication :</b> ['12']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SMBRC<br>\n        <b>Ville :</b> Figeac<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assistance technique', 'Etude', \"Ma\u00eetrise d'oeuvre\", 'Ing\u00e9nierie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Etude de mise en oeuvre des travaux de pr\u00e9vention des inondations sur le bassin du Riou Mort<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142924\" target=\"_blank\"> 19-142924</a><br>\n        <div>"
+      }
+    },
+    "18ad6d9d68964b2d997dd9932d0ef99c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "47.4923950219",
+          " -0.436285134541"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bd16d144dcf44ffdaa14f12fdfc9d5c4",
+        "title": "Vers Saint Barth\u00e9lemy d'Anjou :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Fourniture de barquettes de conditionnement \u00e0 usages alimentaires, films d'operculage et moules.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "aa8f8f1849c34c6d8078c0e9fe649d73": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c40f4fa428a74c34a75ba671d975e96b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bd16d144dcf44ffdaa14f12fdfc9d5c4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_aa8f8f1849c34c6d8078c0e9fe649d73",
+        "style": "IPY_MODEL_c40f4fa428a74c34a75ba671d975e96b",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142388\" target=\"_blank\"> 19-142388</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571436000000<br>\n        <b>D\u00e9partement de publication :</b> ['49']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SAPL Angers Loire Restauration<br>\n        <b>Ville :</b> Saint Barth\u00e9lemy d'Anjou<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Restauration collective']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture de barquettes de conditionnement \u00e0 usages alimentaires, films d'operculage et moules<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142388\" target=\"_blank\"> 19-142388</a><br>\n        <div>"
+      }
+    },
+    "49a91b8e84ae436d89c737779a0ef9fd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "47.7315510459",
+          " -1.2261277126"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aab210fc58b14b5ba1e841a1394e9a02",
+        "title": "Vers Ombr\u00e9e d'Anjou :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Convention de participation pour la protection sociale compl\u00e9mentaire aux agents.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "4ab446fc4cc54c5fa391c6b8918ca9db": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1042b17d66cc45ab9391fbec5c34ebef": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aab210fc58b14b5ba1e841a1394e9a02": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_4ab446fc4cc54c5fa391c6b8918ca9db",
+        "style": "IPY_MODEL_1042b17d66cc45ab9391fbec5c34ebef",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142913\" target=\"_blank\"> 19-142913</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571263200000<br>\n        <b>D\u00e9partement de publication :</b> ['49', '35', '44', '53']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE OMBREE D ANJOU<br>\n        <b>Ville :</b> Ombr\u00e9e d'Anjou<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Convention de participation pour la protection sociale compl\u00e9mentaire aux agents<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142913\" target=\"_blank\"> 19-142913</a><br>\n        <div>"
+      }
+    },
+    "4c91e5cfa3e34fed8ec15f55f4515de3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "50.608350368",
+          " 3.02066096506"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_65841bf3d4c847cc8f62eafad038948c",
+        "title": "Vers Loos :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Fourniture, montage et installation de mobilier sur les sites de l'EFS Hauts-de-France - Normandie.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "48ec513288f74240b8782bd920f4b0b0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1edfa286e4a743e880d7a1e44b53a3af": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "65841bf3d4c847cc8f62eafad038948c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_48ec513288f74240b8782bd920f4b0b0",
+        "style": "IPY_MODEL_1edfa286e4a743e880d7a1e44b53a3af",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142516\" target=\"_blank\"> 19-142516</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1574118000000<br>\n        <b>D\u00e9partement de publication :</b> ['59']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Etablissement Fran\u00e7ais du Sang<br>\n        <b>Ville :</b> Loos<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Mobilier']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture, montage et installation de mobilier sur les sites de l'EFS Hauts-de-France - Normandie<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142516\" target=\"_blank\"> 19-142516</a><br>\n        <div>"
+      }
+    },
+    "b89673afd83b4836a59d9009485e59d1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "50.6753348557",
+          " 3.10093583816"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_252c75dd6d5b4844a3917ff24f5d16c6",
+        "title": "Vers Marcq en baoreul :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Fourniture de livres non scolaires pour la Ville de Marcq-en-Baroeul.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "3067792186444c11a6e79359c5499cc8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9d9f46e2bd584ecca74625f7323eda86": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "252c75dd6d5b4844a3917ff24f5d16c6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_3067792186444c11a6e79359c5499cc8",
+        "style": "IPY_MODEL_9d9f46e2bd584ecca74625f7323eda86",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142893\" target=\"_blank\"> 19-142893</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1574290800000<br>\n        <b>D\u00e9partement de publication :</b> ['59']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Marcq-en-Baroeul<br>\n        <b>Ville :</b> Marcq en baoreul<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Livres']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture de livres non scolaires pour la Ville de Marcq-en-Baroeul<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142893\" target=\"_blank\"> 19-142893</a><br>\n        <div>"
+      }
+    },
+    "4089fe6917c84cef967bb86402009dfe": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "49.3965343512",
+          " 2.11883442492"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_88273a216ca448bf8fae48a2fc66bcc2",
+        "title": "Vers Beauvais :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Fourniture de documents audio, audiovisuels et multim\u00e9dia pour le r\u00e9seau des m\u00e9diath\u00e8ques du Beauvaisis.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "5d3290da295e4c6dbc0cc0e242c65a89": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d40a002bd3164bbb856c6ddb57bc3d8f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "88273a216ca448bf8fae48a2fc66bcc2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_5d3290da295e4c6dbc0cc0e242c65a89",
+        "style": "IPY_MODEL_d40a002bd3164bbb856c6ddb57bc3d8f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142849\" target=\"_blank\"> 19-142849</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571781600000<br>\n        <b>D\u00e9partement de publication :</b> ['60']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Communaute d'Agglo du Beauvaisis<br>\n        <b>Ville :</b> Beauvais<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Cd, DVD']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture de documents audio, audiovisuels et multim\u00e9dia pour le r\u00e9seau des m\u00e9diath\u00e8ques du Beauvaisis<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142849\" target=\"_blank\"> 19-142849</a><br>\n        <div>"
+      }
+    },
+    "b9a5e3ba92dd47fd8e182e3011cf8fc1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "50.5196248764",
+          " 2.86674896884"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d17e26a17da84da3a2d3b3a8c76c73d6",
+        "title": "Vers VIOLAINES :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: travaux neufs de refection de la rue des cedres et rue lecoeuche.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "7b62d0651a6e4c8681fe7023547d2fa2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "520efe3985644b8b9d73292c3effc1a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d17e26a17da84da3a2d3b3a8c76c73d6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_7b62d0651a6e4c8681fe7023547d2fa2",
+        "style": "IPY_MODEL_520efe3985644b8b9d73292c3effc1a1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142093\" target=\"_blank\"> 19-142093</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1573945200000<br>\n        <b>D\u00e9partement de publication :</b> ['62']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE VIOLAINES<br>\n        <b>Ville :</b> VIOLAINES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Voirie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> travaux neufs de refection de la rue des cedres et rue lecoeuche<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142093\" target=\"_blank\"> 19-142093</a><br>\n        <div>"
+      }
+    },
+    "ca07eff90e8340d4b841d5e526181471": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "50.7402216255",
+          " 2.31902794783"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ef526bf3933c4490b79982bbcb3a28a0",
+        "title": "Vers ARQUES :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: AVIS D'APPEL PUBLIC A LA CONCURRENCE APPEL D OFFRES OUVERTASSURANCES.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "19dfd7bb9b9348d28ede52b648b0722e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d463c87076d1482cbf2fd12a30f188a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ef526bf3933c4490b79982bbcb3a28a0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_19dfd7bb9b9348d28ede52b648b0722e",
+        "style": "IPY_MODEL_d463c87076d1482cbf2fd12a30f188a5",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142578\" target=\"_blank\"> 19-142578</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571954400000<br>\n        <b>D\u00e9partement de publication :</b> ['62', '59', '75']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> RESIDENCE DES FONTINETTES<br>\n        <b>Ville :</b> ARQUES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> AVIS D'APPEL PUBLIC A LA CONCURRENCE APPEL D OFFRES OUVERTASSURANCES<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142578\" target=\"_blank\"> 19-142578</a><br>\n        <div>"
+      }
+    },
+    "99f8f1773bde438daa5d1f5dc1a23301": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "45.8433300655",
+          " 4.85410848076"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0a7fa8331c454a70a95021a19a114c34",
+        "title": "Vers Fontaines Sur Saone :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: March\u00e9 de fourniture et la livraison en liaison froide des repas pour le service scolaire et extrascolaire.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "fdda6cbade61454dbd49ccf02b13c4f3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e0cc316fee7d4e97824ce371e5a6b848": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0a7fa8331c454a70a95021a19a114c34": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_fdda6cbade61454dbd49ccf02b13c4f3",
+        "style": "IPY_MODEL_e0cc316fee7d4e97824ce371e5a6b848",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142862\" target=\"_blank\"> 19-142862</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1576537200000<br>\n        <b>D\u00e9partement de publication :</b> ['69']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE FONTAINES SUR SAONE<br>\n        <b>Ville :</b> Fontaines Sur Saone<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Repas, traiteur']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> March\u00e9 de fourniture et la livraison en liaison froide des repas pour le service scolaire et extrascolaire<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142862\" target=\"_blank\"> 19-142862</a><br>\n        <div>"
+      }
+    },
+    "465264cbbd024423b80fdd68debe10bd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "45.9910359834",
+          " 4.68792227737"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_fc6f70f2de284b95b8be4018890d9134",
+        "title": "Vers Villefranche-sur-Saone :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Prestations de d\u00e9tection et g\u00e9o r\u00e9f\u00e9rencement des r\u00e9seaux souterrains.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "8b1266e624594a91aeae0ca03b6746bb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4fa441041869426d8001becc228b72e2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fc6f70f2de284b95b8be4018890d9134": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_8b1266e624594a91aeae0ca03b6746bb",
+        "style": "IPY_MODEL_4fa441041869426d8001becc228b72e2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142672\" target=\"_blank\"> 19-142672</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1576537200000<br>\n        <b>D\u00e9partement de publication :</b> ['69']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive25<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CABVS<br>\n        <b>Ville :</b> Villefranche-sur-Saone<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Prestations de d\u00e9tection et g\u00e9o r\u00e9f\u00e9rencement des r\u00e9seaux souterrains<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142672\" target=\"_blank\"> 19-142672</a><br>\n        <div>"
+      }
+    },
+    "5ce19cbd20bd4980a0e58d948646062e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "46.1542288253",
+          " 6.66014566051"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8ee893c63733472289c0177729efeb90",
+        "title": "Vers Les Gets :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: March\u00e9 de Service relatif \u00e0 la Prestation d'Assurance pour les besoins de la Commune des Gets.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "dc5e5f7719f249a8bf87a4e72204c3b9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "54eb26eacee645f6b9eca0a82390deda": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8ee893c63733472289c0177729efeb90": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_dc5e5f7719f249a8bf87a4e72204c3b9",
+        "style": "IPY_MODEL_54eb26eacee645f6b9eca0a82390deda",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142678\" target=\"_blank\"> 19-142678</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1576537200000<br>\n        <b>D\u00e9partement de publication :</b> ['74']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Commune des Gets<br>\n        <b>Ville :</b> Les Gets<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> March\u00e9 de Service relatif \u00e0 la Prestation d'Assurance pour les besoins de la Commune des Gets<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142678\" target=\"_blank\"> 19-142678</a><br>\n        <div>"
+      }
+    },
+    "cb9a9150194c4ab8937202196efcd8d8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "49.4413460103",
+          " 1.09256784278"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1e096af31c0944bcb0333357f180f47c",
+        "title": "Vers Rouen :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: R\u00e9alisation d'une enqu\u00eate de satisfaction sur la perception de la qualit\u00e9 du service rendu dans l'habitat social en Normandie..\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "da80f59c683142208883b9347be1bc5d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "54bf1ec85148442f9232943435b9aa07": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1e096af31c0944bcb0333357f180f47c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_da80f59c683142208883b9347be1bc5d",
+        "style": "IPY_MODEL_54bf1ec85148442f9232943435b9aa07",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142725\" target=\"_blank\"> 19-142725</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571263200000<br>\n        <b>D\u00e9partement de publication :</b> ['76', '14', '27', '50', '61']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Union sociale pour l'habitat de HN<br>\n        <b>Ville :</b> Rouen<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> R\u00e9alisation d'une enqu\u00eate de satisfaction sur la perception de la qualit\u00e9 du service rendu dans l'habitat social en Normandie.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142725\" target=\"_blank\"> 19-142725</a><br>\n        <div>"
+      }
+    },
+    "d27bc39f988b4160a577a0417b99b5c0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.8697812117",
+          " 2.63565952774"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9242d7c84cfb49febc1fdb0db5c5d6f9",
+        "title": "Vers Vaires sur marne :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Souscription des contrats d'assurance du groupement de commande constitu\u00e9 entre la Commune et le CCAS de Vaires-sur-Marne.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "d8170610322c47db9e79b64d24b07452": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "af739277de71474995d1f8d10ea95f89": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9242d7c84cfb49febc1fdb0db5c5d6f9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_d8170610322c47db9e79b64d24b07452",
+        "style": "IPY_MODEL_af739277de71474995d1f8d10ea95f89",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142823\" target=\"_blank\"> 19-142823</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571954400000<br>\n        <b>D\u00e9partement de publication :</b> ['77']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Vaires sur Marne<br>\n        <b>Ville :</b> Vaires sur marne<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Souscription des contrats d'assurance du groupement de commande constitu\u00e9 entre la Commune et le CCAS de Vaires-sur-Marne<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142823\" target=\"_blank\"> 19-142823</a><br>\n        <div>"
+      }
+    },
+    "8e429ca4af4d415093d07a8271465bba": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.6167741818",
+          " 1.90638035997"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5712026e93994b01b684ec9d3cc5b07e",
+        "title": "Vers Rambouillet :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Traitement du bois issu des d\u00e9ch\u00e8teries du secteur de Dreux.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "5b9ad2a0b186450e93084e1b052c8e40": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9b6fb38867b74639982240bd6551db87": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5712026e93994b01b684ec9d3cc5b07e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_5b9ad2a0b186450e93084e1b052c8e40",
+        "style": "IPY_MODEL_9b6fb38867b74639982240bd6551db87",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142636\" target=\"_blank\"> 19-142636</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571868000000<br>\n        <b>D\u00e9partement de publication :</b> ['28']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SITREVA<br>\n        <b>Ville :</b> Rambouillet<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Bois', 'D\u00e9chetterie (exploitation)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Traitement du bois issu des d\u00e9ch\u00e8teries du secteur de Dreux<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142636\" target=\"_blank\"> 19-142636</a><br>\n        <div>"
+      }
+    },
+    "f53dee1a856e4501b75c66c8c3e2db47": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.8196347492",
+          " 1.32921957456"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e567e26a6ef9498c9e13c6e0eb3531e4",
+        "title": "Vers Grisolles :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: souscription des contrats d'assurances pour la Commune de Grisolles.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "586e63f961a74089b4dca15e97b0c639": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f9a384335f804dec882a2c92de02f244": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e567e26a6ef9498c9e13c6e0eb3531e4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_586e63f961a74089b4dca15e97b0c639",
+        "style": "IPY_MODEL_f9a384335f804dec882a2c92de02f244",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142748\" target=\"_blank\"> 19-142748</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571954400000<br>\n        <b>D\u00e9partement de publication :</b> ['82']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Grisolles<br>\n        <b>Ville :</b> Grisolles<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> souscription des contrats d'assurances pour la Commune de Grisolles<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142748\" target=\"_blank\"> 19-142748</a><br>\n        <div>"
+      }
+    },
+    "874c8877d7dc4357b4eb087ba99211cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "43.1361589728",
+          " 5.93239634249"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_874a9e00e3824eeaa22339397c9a40e9",
+        "title": "Vers Toulon :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Maintenance Des Extincteurs, \u00e9clairages De Secours, Installation De D\u00e9senfumage, Ria Et Colonnes S\u00e8ches Dans Les B\u00e2timents Du D\u00e9partement Du Var - 5 lots.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "0092929862e34181bdd2b7e51d47bf37": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7eb8a50bd5e4453388ad7be0e4ce14d4": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "874a9e00e3824eeaa22339397c9a40e9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0092929862e34181bdd2b7e51d47bf37",
+        "style": "IPY_MODEL_7eb8a50bd5e4453388ad7be0e4ce14d4",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142745\" target=\"_blank\"> 19-142745</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571954400000<br>\n        <b>D\u00e9partement de publication :</b> ['83']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Conseil G\u00e9n\u00e9ral du Var<br>\n        <b>Ville :</b> Toulon<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Extincteur']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Maintenance Des Extincteurs, \u00e9clairages De Secours, Installation De D\u00e9senfumage, Ria Et Colonnes S\u00e8ches Dans Les B\u00e2timents Du D\u00e9partement Du Var - 5 lots<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142745\" target=\"_blank\"> 19-142745</a><br>\n        <div>"
+      }
+    },
+    "6463cd2e528947fa82250b21a832d612": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "46.4510564854",
+          " -1.16449285012"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_be9b9f758fb64d0e903b9e5ffb6df0c2",
+        "title": "Vers Lu\u00e7on :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: MAPF no19-02 - Mise en oeuvre du dispositif de suivi de l'\u00e9volution de la biodiversit\u00e9 en lien avec la gestion de l'eau dans le Marais poitevin.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "abf8c653f27c45448cf5fa252e7ce655": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "036e5ba5b3474be79e9b8269dde47e3c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "be9b9f758fb64d0e903b9e5ffb6df0c2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_abf8c653f27c45448cf5fa252e7ce655",
+        "style": "IPY_MODEL_036e5ba5b3474be79e9b8269dde47e3c",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142890\" target=\"_blank\"> 19-142890</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1572217200000<br>\n        <b>D\u00e9partement de publication :</b> ['85', '79', '17']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> ETABLISSEMENT PUBLIC DU MARAIS POITEVI<br>\n        <b>Ville :</b> Lu\u00e7on<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> MAPF no19-02 - Mise en oeuvre du dispositif de suivi de l'\u00e9volution de la biodiversit\u00e9 en lien avec la gestion de l'eau dans le Marais poitevin<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142890\" target=\"_blank\"> 19-142890</a><br>\n        <div>"
+      }
+    },
+    "3e395afc66b4494991ac2dd6a018a9f9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.907688244",
+          " 2.43863982727"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f0b0125df87e48e886879fa320640d32",
+        "title": "Vers Bobigny :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Renovation Et Restructuration Du College Lenain De Tillemont A Montreuil.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "f2360b5eff4e4d659c65d1007280c313": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d3a293cc52ae4212850cb89e0cfbc20f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f0b0125df87e48e886879fa320640d32": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_f2360b5eff4e4d659c65d1007280c313",
+        "style": "IPY_MODEL_d3a293cc52ae4212850cb89e0cfbc20f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142898\" target=\"_blank\"> 19-142898</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1573513200000<br>\n        <b>D\u00e9partement de publication :</b> ['93']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> DEPARTEMENT DE LA SEINE SAINT DENIS<br>\n        <b>Ville :</b> Bobigny<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Abris']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Renovation Et Restructuration Du College Lenain De Tillemont A Montreuil<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142898\" target=\"_blank\"> 19-142898</a><br>\n        <div>"
+      }
+    },
+    "5618f7f05f4a4aada2a2318b3e18a0b4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.8361825401",
+          " 2.56443736814"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_895b82cc815241ef823648b53d48c5ca",
+        "title": "Vers Noisy-le-grand cedex :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: R\u00e9alisation d'une d\u00e9ch\u00e8terie - recyclerie, d'une voirie et d'un d\u00e9p\u00f4t communal \u00e0 Neuilly-sur-Marne (93).\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "e1531c46b4e74184afbaf1492f7d0b01": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bf4ea1d36e86468fb823adb421709996": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "895b82cc815241ef823648b53d48c5ca": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_e1531c46b4e74184afbaf1492f7d0b01",
+        "style": "IPY_MODEL_bf4ea1d36e86468fb823adb421709996",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142510\" target=\"_blank\"> 19-142510</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571436000000<br>\n        <b>D\u00e9partement de publication :</b> ['93', '94', '95', '77']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> GRAND PARIS GRAND EST<br>\n        <b>Ville :</b> Noisy-le-grand cedex<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent', 'D\u00e9chetterie (travaux)', 'Espaces verts']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> R\u00e9alisation d'une d\u00e9ch\u00e8terie - recyclerie, d'une voirie et d'un d\u00e9p\u00f4t communal \u00e0 Neuilly-sur-Marne (93)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142510\" target=\"_blank\"> 19-142510</a><br>\n        <div>"
+      }
+    },
+    "2d4a037b52a34a168fedfb38596e6750": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.8361825401",
+          " 2.56443736814"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_d4d1c6202d0d4d3192c99bfb69e73acb",
+        "title": "Vers Noisy le grand :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Mission d'Assistance \u00e0 Ma\u00eetrise d'Ouvrage OPC Urbain pour les programmes de r\u00e9novation urbaine inscrits au NPNRU.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "f6db3390debf451c834678ae5093e5a1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2fb6c690d3104706b6c9ea7cbe9a2363": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d4d1c6202d0d4d3192c99bfb69e73acb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_f6db3390debf451c834678ae5093e5a1",
+        "style": "IPY_MODEL_2fb6c690d3104706b6c9ea7cbe9a2363",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142473\" target=\"_blank\"> 19-142473</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571608800000<br>\n        <b>D\u00e9partement de publication :</b> ['93']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> GRAND PARIS GRAND EST<br>\n        <b>Ville :</b> Noisy le grand<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission d'Assistance \u00e0 Ma\u00eetrise d'Ouvrage OPC Urbain pour les programmes de r\u00e9novation urbaine inscrits au NPNRU<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142473\" target=\"_blank\"> 19-142473</a><br>\n        <div>"
+      }
+    },
+    "c81fd024ae9f43ad9850d0f7acd9d5f7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.7733620104",
+          " 2.48799310463"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_27982259e9b04f6cbcdc279983ed2744",
+        "title": "Vers Bonneuil-sur-Marne :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Fourniture de denr\u00e9es alimentaires pour la Ville de Bonneuil-sur-Marne et son centre de vacances.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "5fd5d8b99210482988178103347d0425": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "53c0f4106b8440d9930e27825dd83fd2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "27982259e9b04f6cbcdc279983ed2744": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_5fd5d8b99210482988178103347d0425",
+        "style": "IPY_MODEL_53c0f4106b8440d9930e27825dd83fd2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142666\" target=\"_blank\"> 19-142666</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571868000000<br>\n        <b>D\u00e9partement de publication :</b> ['94']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE BONNEUIL SUR MARNE<br>\n        <b>Ville :</b> Bonneuil-sur-Marne<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Denr\u00e9es alimentaires']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture de denr\u00e9es alimentaires pour la Ville de Bonneuil-sur-Marne et son centre de vacances<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142666\" target=\"_blank\"> 19-142666</a><br>\n        <div>"
+      }
+    },
+    "87e678c547f94363a30c069cef6dfc74": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "48.7470359922",
+          " 2.52528049019"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_85353a495fb840ebbd6bfdc4370afca2",
+        "title": "Vers Boissy saint l\u00e9ger :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: Accord cadre de ma\u00eetrise technique.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "805dbcaae2d8417c8d6cf1e1fd430c24": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b5ba3d3099c345d48df9b37182d064c2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "85353a495fb840ebbd6bfdc4370afca2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_805dbcaae2d8417c8d6cf1e1fd430c24",
+        "style": "IPY_MODEL_b5ba3d3099c345d48df9b37182d064c2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142819\" target=\"_blank\"> 19-142819</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1569880800000<br>\n        <b>D\u00e9partement de publication :</b> ['94']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Boissy-saint-L\u00e9ger<br>\n        <b>Ville :</b> Boissy saint l\u00e9ger<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ma\u00eetrise d'oeuvre\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Accord cadre de ma\u00eetrise technique<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142819\" target=\"_blank\"> 19-142819</a><br>\n        <div>"
+      }
+    },
+    "f8ad79b5640d4cc6bb3b58a0d2046837": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "16.0004645662",
+          " -61.7281032959"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_84041614aeb540db9e2f9a4af4cdb2e7",
+        "title": "Vers BASSE-TERRE :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Avis d'attribution : Hydro curage de r\u00e9seaux sur le p\u00e9rim\u00e8tre de la Communaut\u00e9.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "2d71f3de77ce480583ffafaa17731cf1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c2cc68e590d84cd3ba4d003caf5bb8cc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "84041614aeb540db9e2f9a4af4cdb2e7": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2d71f3de77ce480583ffafaa17731cf1",
+        "style": "IPY_MODEL_c2cc68e590d84cd3ba4d003caf5bb8cc",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142826\" target=\"_blank\"> 19-142826</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571436000000<br>\n        <b>D\u00e9partement de publication :</b> ['971']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CA Sud Basse-Terre<br>\n        <b>Ville :</b> BASSE-TERRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Curage']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Avis d'attribution : Hydro curage de r\u00e9seaux sur le p\u00e9rim\u00e8tre de la Communaut\u00e9<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142826\" target=\"_blank\"> 19-142826</a><br>\n        <div>"
+      }
+    },
+    "2288b1af68b54ecf897cf2ddc8ba59cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "16.0004645662",
+          " -61.7281032959"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8e708e1209f84b7b8002b04d3a0e8fc5",
+        "title": "Vers BASSE-TERRE :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: rectificatif\n        Objet du march\u00e9: assistance technique dans le cadre du programme de d\u00e9veloppement rural cofinanc\u00e9 par le feader 2014-2020 et du programme op\u00e9rationnel feamp (rectificatif).\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "767b06c2f21045c3ac7a5768ee7e9315": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "91bab1fbcc11440f9182b5418b047674": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8e708e1209f84b7b8002b04d3a0e8fc5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_767b06c2f21045c3ac7a5768ee7e9315",
+        "style": "IPY_MODEL_91bab1fbcc11440f9182b5418b047674",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142757\" target=\"_blank\"> 19-142757</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571608800000<br>\n        <b>D\u00e9partement de publication :</b> ['971', '75']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> R\u00e9gion Guadeloupe<br>\n        <b>Ville :</b> BASSE-TERRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> assistance technique dans le cadre du programme de d\u00e9veloppement rural cofinanc\u00e9 par le feader 2014-2020 et du programme op\u00e9rationnel feamp (rectificatif)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142757\" target=\"_blank\"> 19-142757</a><br>\n        <div>"
+      }
+    },
+    "94f39295f800488784e6b52464528e14": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "4.93360677012",
+          " -52.7663314416"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bf98a3a438d049a89ad2df9f7f71844b",
+        "title": "Vers Kourou :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Acquisition et livraison de mat\u00e9riels \u00e9v\u00e8nementiels pour la Communaut\u00e9 de Communes Des Savanes.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "49911629d5454d78a0bdf461f73f9e68": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "50aa561302ea430894cad3bdcaec9df3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bf98a3a438d049a89ad2df9f7f71844b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_49911629d5454d78a0bdf461f73f9e68",
+        "style": "IPY_MODEL_50aa561302ea430894cad3bdcaec9df3",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142798\" target=\"_blank\"> 19-142798</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571868000000<br>\n        <b>D\u00e9partement de publication :</b> ['973']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CC des Savanes<br>\n        <b>Ville :</b> Kourou<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Plancher technique', 'Tente']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Acquisition et livraison de mat\u00e9riels \u00e9v\u00e8nementiels pour la Communaut\u00e9 de Communes Des Savanes<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142798\" target=\"_blank\"> 19-142798</a><br>\n        <div>"
+      }
+    },
+    "ec14188e7a4645d68cc469518c2a8a8c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          "-20.9940292693",
+          " 55.3975084985"
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9103974d19b0457db1ab78142e6c7df4",
+        "title": "Vers La Possession :\n        Date de publication de l'annonce au Boamp : 2019-09-21 00:00:00.\n        Statut de l'annonce: initial\n        Objet du march\u00e9: Mission De Maitrise D'oeuvre Partielle Relative A La R\u00e9habilitation De La Cuisine Satellite De L'\u00e9cole Paul Eluard Et A La Construction D'Une Cuisine Centrale.\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "2479a142ac12429fb9bc34b21da2b344": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bd8874e820dc463a982adec1ea746d0a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9103974d19b0457db1ab78142e6c7df4": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2479a142ac12429fb9bc34b21da2b344",
+        "style": "IPY_MODEL_bd8874e820dc463a982adec1ea746d0a",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142555\" target=\"_blank\"> 19-142555</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-09-21 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 1571695200000<br>\n        <b>D\u00e9partement de publication :</b> ['974']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> VILLE DE LA POSSESSION<br>\n        <b>Ville :</b> La Possession<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ma\u00eetrise d'oeuvre\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission De Maitrise D'oeuvre Partielle Relative A La R\u00e9habilitation De La Cuisine Satellite De L'\u00e9cole Paul Eluard Et A La Construction D'Une Cuisine Centrale<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-142555\" target=\"_blank\"> 19-142555</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "c242ec212e264a048c9760fe0aaa17c8"}
+</script>
+
+</body>
+</html>
