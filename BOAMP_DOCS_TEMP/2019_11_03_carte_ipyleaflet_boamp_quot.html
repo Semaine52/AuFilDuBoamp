@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2019_11_03_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "decbc2c423ff42bba59118c096f9fd96": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "430ad18317794687a5c9e48d750dbf51": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "545821d3a5324d4497dd154c99390aa0": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "864bd64f4ddf471897d4e0a30f41f4c6": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "9fcccff9b5db4f708bca688eb77170a9": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size"
+        ]
+      }
+    },
+    "3fcd0c4c94ea420f852446acddfea35b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7b94deb2ffe448e49194dfd0f05f2745": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "ecc21baa0c29483f868dc7d3482f6b83": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "_dom_classes": [],
+        "basemap": {
+          "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "max_zoom": 19,
+          "attribution": "Map data (c) <a href=\"https://openstreetmap.org\">OpenStreetMap</a> contributors"
+        },
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_decbc2c423ff42bba59118c096f9fd96",
+          "IPY_MODEL_430ad18317794687a5c9e48d750dbf51",
+          "IPY_MODEL_bb7f93510ba241168287205de7ca9119"
+        ],
+        "default_style": "IPY_MODEL_545821d3a5324d4497dd154c99390aa0",
+        "dragging_style": "IPY_MODEL_864bd64f4ddf471897d4e0a30f41f4c6",
+        "layers": [
+          "IPY_MODEL_9fcccff9b5db4f708bca688eb77170a9",
+          "IPY_MODEL_897241c0d40e4b658ba242240e8fcb7a",
+          "IPY_MODEL_26395cd424a648778746f6856cb3b325",
+          "IPY_MODEL_2858102b10674678a4fda3c12ca1d761",
+          "IPY_MODEL_1be39c5094814d748064f5db981eb2e8",
+          "IPY_MODEL_86e7cfd77891419bb4b6968b783bbd4d"
+        ],
+        "layout": "IPY_MODEL_3fcd0c4c94ea420f852446acddfea35b",
+        "options": [
+          "basemap",
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_7b94deb2ffe448e49194dfd0f05f2745",
+        "zoom": 6
+      }
+    },
+    "bb7f93510ba241168287205de7ca9119": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "897241c0d40e4b658ba242240e8fcb7a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          46.809406,
+          2.732245
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3a44f9a0f0f14e01976bf760407d55a6",
+        "title": "Vers BOURGES :\n        Date de publication de l'annonce au Boamp : 2019-11-03 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        2019-GC-QAI\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "cc56fd1045864e48922e0754841fb47e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4a13da363b524d3b812de67ea314a373": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3a44f9a0f0f14e01976bf760407d55a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_cc56fd1045864e48922e0754841fb47e",
+        "style": "IPY_MODEL_4a13da363b524d3b812de67ea314a373",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166197\" target=\"_blank\"> 19-166197</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-03 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-12-20 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['18']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Syndicat D\u00e9partemental d'Energie 18<br>\n        <b>Ville :</b> BOURGES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Audit', 'Surveillance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> 2019-GC-QAI<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166197\" target=\"_blank\"> 19-166197</a><br>\n        <div>"
+      }
+    },
+    "26395cd424a648778746f6856cb3b325": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.521762,
+          -1.116576
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_3ecc798feb1c4b28a50b712c797a2879",
+        "title": "Vers SOULAC SUR MER :\n        Date de publication de l'annonce au Boamp : 2019-11-03 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Souscription des contrats d'assurance pour la COMMUNAUTE DE COMMUNES MEDOC ATLANTIQUE (\u00e0 la suite d'une mise en concurrence infructueuse)\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "86b3df760c5645dc88d3612a8ca9e550": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3b4a3b6f3bad459cb6e8fc3165faec44": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3ecc798feb1c4b28a50b712c797a2879": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_86b3df760c5645dc88d3612a8ca9e550",
+        "style": "IPY_MODEL_3b4a3b6f3bad459cb6e8fc3165faec44",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166226\" target=\"_blank\"> 19-166226</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-03 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-11-28 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['33']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Communaut\u00e9 Communes M\u00e9doc Atlantique<br>\n        <b>Ville :</b> SOULAC SUR MER<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Souscription des contrats d'assurance pour la COMMUNAUTE DE COMMUNES MEDOC ATLANTIQUE (\u00e0 la suite d'une mise en concurrence infructueuse)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166226\" target=\"_blank\"> 19-166226</a><br>\n        <div>"
+      }
+    },
+    "2858102b10674678a4fda3c12ca1d761": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.760401,
+          3.098658
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_487abd224c6f4a179939a3074c3bbbfc",
+        "title": "Vers CLERMONT FERRAND :\n        Date de publication de l'annonce au Boamp : 2019-11-03 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Maintenance des portes (incluant les grilles et rideaux), portails, barri\u00e8res et bornes de l'Universit\u00e9 Clermont Auvergne\n        \n        Nature : rectificatif\n        Famille : joue\n        P\u00e9rim\u00e8tre : autre\n        Statut : rectificatif\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "ea2386f8920c439b86219e86f824828b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2988dc4389404d35ac1a0b1382e8c7be": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "487abd224c6f4a179939a3074c3bbbfc": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ea2386f8920c439b86219e86f824828b",
+        "style": "IPY_MODEL_2988dc4389404d35ac1a0b1382e8c7be",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166217\" target=\"_blank\"> 19-166217</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-03 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-11-13 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['63', '43', '15', '3']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> UNIVERSITE CLERMONT AUVERGNE<br>\n        <b>Ville :</b> CLERMONT FERRAND<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Maintenance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Maintenance des portes (incluant les grilles et rideaux), portails, barri\u00e8res et bornes de l'Universit\u00e9 Clermont Auvergne<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166217\" target=\"_blank\"> 19-166217</a><br>\n        <div>"
+      }
+    },
+    "1be39c5094814d748064f5db981eb2e8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.747327,
+          4.888298
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5c2b7f771f964a7d84496528b91d8522",
+        "title": "Vers LYON :\n        Date de publication de l'annonce au Boamp : 2019-11-03 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Tribunal de Grande Instance de MOULINSPalais de Justice de MOULINS (Tribunal d'Instance et Conseil des Prudhommes)Refonte de l'infrastructure informatique et t\u00e9l\u00e9phonique.Interconnexion d\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "31dba09c792a4cc2acc080c7da01808f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "34a11680f0ed485aa69e5ee795462258": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5c2b7f771f964a7d84496528b91d8522": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_31dba09c792a4cc2acc080c7da01808f",
+        "style": "IPY_MODEL_34a11680f0ed485aa69e5ee795462258",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166224\" target=\"_blank\"> 19-166224</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-03 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-11-29 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['3', '63', '71', '58', '18']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Minist\u00e8re de la Justice et des Libert\u00e9<br>\n        <b>Ville :</b> LYON<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Tribunal de Grande Instance de MOULINSPalais de Justice de MOULINS (Tribunal d'Instance et Conseil des Prudhommes)Refonte de l'infrastructure informatique et t\u00e9l\u00e9phonique.Interconnexion d<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-166224\" target=\"_blank\"> 19-166224</a><br>\n        <div>"
+      }
+    },
+    "86e7cfd77891419bb4b6968b783bbd4d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          16.000074,
+          -61.731793
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5a7bf097425047808f0ddd947d922c68",
+        "title": "Vers BASSE TERRE :\n        Date de publication de l'annonce au Boamp : 2019-11-03 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        fournitures services et travaux d'am\u00e9nagement et d'espace vert du reseau routier r\u00e9gional\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : oui\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "c1218094bd974f228d9a35511f559a18": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "676993e6e1664f04996f6485107a3325": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5a7bf097425047808f0ddd947d922c68": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c1218094bd974f228d9a35511f559a18",
+        "style": "IPY_MODEL_676993e6e1664f04996f6485107a3325",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-165973\" target=\"_blank\"> 19-165973</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-03 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-12-04 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['971']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> R\u00e9gion Guadeloupe<br>\n        <b>Ville :</b> BASSE TERRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Espaces verts', 'Prestations de services', 'V\u00e9g\u00e9taux']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> fournitures services et travaux d'am\u00e9nagement et d'espace vert du reseau routier r\u00e9gional<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-165973\" target=\"_blank\"> 19-165973</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ecc21baa0c29483f868dc7d3482f6b83"}
+</script>
+
+</body>
+</html>
