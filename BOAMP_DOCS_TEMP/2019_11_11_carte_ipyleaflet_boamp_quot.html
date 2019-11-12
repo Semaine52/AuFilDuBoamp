@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2019_11_11_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "16e9716ef18c4cd79507140caae82129": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "deba876750894886b2c6f99405cfbc4b": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "879babffbd35446fb5f746bd12a05184": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "e6be98b8ffe54976970e644376b958cc": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "c7e02d509a3a44ba97fb38df91cc9f55": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size"
+        ]
+      }
+    },
+    "3bec78598b6b4e56b15666814c3eb779": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "692c8be5b3f7435888da8e9ebf4f526f": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {}
+    },
+    "e67cc38d9eab432391748f624ce5043b": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "_dom_classes": [],
+        "basemap": {
+          "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "max_zoom": 19,
+          "attribution": "Map data (c) <a href=\"https://openstreetmap.org\">OpenStreetMap</a> contributors"
+        },
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_16e9716ef18c4cd79507140caae82129",
+          "IPY_MODEL_deba876750894886b2c6f99405cfbc4b",
+          "IPY_MODEL_ae6012be068e44f4b7b0243ae3706d62"
+        ],
+        "default_style": "IPY_MODEL_879babffbd35446fb5f746bd12a05184",
+        "dragging_style": "IPY_MODEL_e6be98b8ffe54976970e644376b958cc",
+        "layers": [
+          "IPY_MODEL_c7e02d509a3a44ba97fb38df91cc9f55",
+          "IPY_MODEL_6ed31af07f444b9f84b21c59bea596c5",
+          "IPY_MODEL_a2005dd9c7a94a9a88b1c6d8a4a4cc5d",
+          "IPY_MODEL_b9f10e8a63a445559d1cc22f85853e96",
+          "IPY_MODEL_b06d9e7c58aa473eba8fb145373bb915"
+        ],
+        "layout": "IPY_MODEL_3bec78598b6b4e56b15666814c3eb779",
+        "options": [
+          "basemap",
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_692c8be5b3f7435888da8e9ebf4f526f",
+        "zoom": 6
+      }
+    },
+    "ae6012be068e44f4b7b0243ae3706d62": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "6ed31af07f444b9f84b21c59bea596c5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          44.755429,
+          4.837589
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b4e89eb76f60496fbf331eccd13f7ffe",
+        "title": "Vers SAULCE SUR RH\u00d4NE :\n        Date de publication de l'annonce au Boamp : 2019-11-11 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        March\u00e9 de fourniture et d'acheminement d'\u00e9lectricit\u00e9\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "a472ce4318b14c658eb6ae62b94e8af8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7fc7d07aeb0d415c9721ff2e2e3173cc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b4e89eb76f60496fbf331eccd13f7ffe": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a472ce4318b14c658eb6ae62b94e8af8",
+        "style": "IPY_MODEL_7fc7d07aeb0d415c9721ff2e2e3173cc",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169670\" target=\"_blank\"> 19-169670</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-11 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-12-02 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['26']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> UAFI<br>\n        <b>Ville :</b> SAULCE SUR RH\u00d4NE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Electricit\u00e9, gaz (fourniture)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> March\u00e9 de fourniture et d'acheminement d'\u00e9lectricit\u00e9<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169670\" target=\"_blank\"> 19-169670</a><br>\n        <div>"
+      }
+    },
+    "a2005dd9c7a94a9a88b1c6d8a4a4cc5d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          47.423298,
+          -0.610553
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8d98ff33192041539c04a94e2d9ad886",
+        "title": "Vers ANGERS :\n        Date de publication de l'annonce au Boamp : 2019-11-11 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Le pr\u00e9sent accord-cadre a pour objet l'ex\u00e9cution des prestations de maintenance pr\u00e9ventive et corrective sur les alimentations sans interruption en service \u00e0 l'Universit\u00e9 d'Angers, ains\n        \n        Nature : attribution\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "09d4b33bb7b0495f9a6edf7cdead4e1a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d1581bafa5a54334bb77514e0a7194eb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8d98ff33192041539c04a94e2d9ad886": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_09d4b33bb7b0495f9a6edf7cdead4e1a",
+        "style": "IPY_MODEL_d1581bafa5a54334bb77514e0a7194eb",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169700\" target=\"_blank\"> 19-169700</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-11 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-01-31 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['49']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Universit\u00e9 d'Angers<br>\n        <b>Ville :</b> ANGERS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Onduleur']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Le pr\u00e9sent accord-cadre a pour objet l'ex\u00e9cution des prestations de maintenance pr\u00e9ventive et corrective sur les alimentations sans interruption en service \u00e0 l'Universit\u00e9 d'Angers, ains<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169700\" target=\"_blank\"> 19-169700</a><br>\n        <div>"
+      }
+    },
+    "b9f10e8a63a445559d1cc22f85853e96": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          50.382305,
+          3.56325
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_753af34668164fca8910b34c9664d2a9",
+        "title": "Vers SAINT SAULVE :\n        Date de publication de l'annonce au Boamp : 2019-11-11 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        assistance \u00e0 ma\u00eetrise d'ouvrage dans le cadre de la remise en \u00e9tat des d\u00e9sordres relatifs au syst\u00e8me d'anti-franchissement des feux des 29 rames du tramway valenciennois\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "8763fc0cc80e48c5b2c902a403354692": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8f501e53425b46ed812736124aa688a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "753af34668164fca8910b34c9664d2a9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_8763fc0cc80e48c5b2c902a403354692",
+        "style": "IPY_MODEL_8f501e53425b46ed812736124aa688a1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-51026\" target=\"_blank\"> 19-51026</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-11 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-12-09 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['59']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SIMOUV<br>\n        <b>Ville :</b> SAINT SAULVE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> assistance \u00e0 ma\u00eetrise d'ouvrage dans le cadre de la remise en \u00e9tat des d\u00e9sordres relatifs au syst\u00e8me d'anti-franchissement des feux des 29 rames du tramway valenciennois<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-51026\" target=\"_blank\"> 19-51026</a><br>\n        <div>"
+      }
+    },
+    "b06d9e7c58aa473eba8fb145373bb915": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.11.1",
+      "state": {
+        "draggable": false,
+        "location": [
+          43.176773,
+          5.698926
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ef6acc8e1c0247fd95b574fd88980a36",
+        "title": "Vers SANARY SUR MER :\n        Date de publication de l'annonce au Boamp : 2019-11-11 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Fourniture, livraison et installation de machines, mat\u00e9riels et consommables dans le cadre de la r\u00e9alisation du Fablab et de l'espace robotique scolaire de la commune de sanary-sur-mer\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "79260e6fe76340ad9accccea8349e243": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e9e99ec4f05440e48f398ea1cac645d2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ef6acc8e1c0247fd95b574fd88980a36": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_79260e6fe76340ad9accccea8349e243",
+        "style": "IPY_MODEL_e9e99ec4f05440e48f398ea1cac645d2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169701\" target=\"_blank\"> 19-169701</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2019-11-11 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2019-12-08 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['83']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE SANARY SUR MER<br>\n        <b>Ville :</b> SANARY SUR MER<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Impression', 'Informatique (mat\u00e9riel)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture, livraison et installation de machines, mat\u00e9riels et consommables dans le cadre de la r\u00e9alisation du Fablab et de l'espace robotique scolaire de la commune de sanary-sur-mer<br>\n        \n        <b>Consulter l'annonce compl\u00e8te (bis) \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/19-169701\" target=\"_blank\"> 19-169701</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "e67cc38d9eab432391748f624ce5043b"}
+</script>
+
+</body>
+</html>
