@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}}, "data": {"name": "data-34e0173489e326de1840f136c7e29e7f"}, "mark": {"type": "bar", "size": 30}, "background": "#ffffff", "encoding": {"color": {"type": "nominal", "field": "g01_02_01_famille", "title": "Codes couleurs"}, "tooltip": [{"type": "nominal", "field": "g01_02_01_famille"}, {"type": "quantitative", "field": "g01_02_01_famille_decompte"}], "x": {"type": "quantitative", "field": "g01_02_01_famille_decompte", "title": " Boamp du 06/04/2020 - R\u00e9partition et total des effectifs par type de famille de march\u00e9 (n= 245)"}, "y": {"type": "nominal", "field": "g01_02_01_famille", "title": "g01_02_01_famille"}}, "height": 200, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v3.4.0.json", "datasets": {"data-34e0173489e326de1840f136c7e29e7f": [{"g01_02_01_famille": "fns", "g01_02_01_famille_decompte": 186}, {"g01_02_01_famille": "mapa", "g01_02_01_famille_decompte": 42}, {"g01_02_01_famille": "joue", "g01_02_01_famille_decompte": 16}, {"g01_02_01_famille": "dsp", "g01_02_01_famille_decompte": 1}, {"g01_02_01_famille": "total", "g01_02_01_famille_decompte": 245}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
