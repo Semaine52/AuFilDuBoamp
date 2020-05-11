@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020_05_10_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "32268127a9c14cfe8d8d5dedcf73c5d3": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "b622e91bd2274d82b31ed13481545d88": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "89038f9c7e454deaa438b7cd9735bdc5": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "5a1a9e98697b49f8b58609ea37a4ef77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4d76d2e09d7a45afb3a4b7e848304790": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "bc11195a4ac84b6d899a75f5785415e9": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_0e2522a7bac34a2abf7372e65dbb069f",
+          "IPY_MODEL_3c56963f7b454339b9b998595a0b5ef7",
+          "IPY_MODEL_fb8340786b1d451f969c23528b9b117a"
+        ],
+        "default_style": "IPY_MODEL_32268127a9c14cfe8d8d5dedcf73c5d3",
+        "dragging_style": "IPY_MODEL_b622e91bd2274d82b31ed13481545d88",
+        "layers": [
+          "IPY_MODEL_89038f9c7e454deaa438b7cd9735bdc5",
+          "IPY_MODEL_aea551290d65468fac5da744360a1cd9",
+          "IPY_MODEL_149e5923f75a456eb234db401f19a046",
+          "IPY_MODEL_53851a6f11604d4b93c7d34f597ff260",
+          "IPY_MODEL_24226f5b226746868623ca59473bfefd",
+          "IPY_MODEL_09ac5621b2b04054b7296a2108dd3091",
+          "IPY_MODEL_7e8925eb72f643e0abe740d4b0801f53",
+          "IPY_MODEL_71f266eb61f844b4a398c6e207a17b50",
+          "IPY_MODEL_9d1130d3854044c799c84f1fb2f74b87"
+        ],
+        "layout": "IPY_MODEL_5a1a9e98697b49f8b58609ea37a4ef77",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_4d76d2e09d7a45afb3a4b7e848304790",
+        "zoom": 6.0
+      }
+    },
+    "0e2522a7bac34a2abf7372e65dbb069f": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "3c56963f7b454339b9b998595a0b5ef7": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "fb8340786b1d451f969c23528b9b117a": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "aea551290d65468fac5da744360a1cd9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          47.49244,
+          6.532657
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_8f7bda1e8b834fb184d894528d257a07",
+        "title": "Vers BESAN\u00c7ON :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        DREALBFC-20-RN19-PSS-CTLEXT2\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "1639c4181be8430fba57479543b378db": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c98dbdb7eb4c44d2ab95029b6774d539": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8f7bda1e8b834fb184d894528d257a07": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_1639c4181be8430fba57479543b378db",
+        "style": "IPY_MODEL_c98dbdb7eb4c44d2ab95029b6774d539",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61842\" target=\"_blank\"> 20-61842</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-16 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['25']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> DREAL BFC/SG/DAJCP<br>\n        <b>Ville :</b> BESAN\u00c7ON<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ouvrage d'infrastructure\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> DREALBFC-20-RN19-PSS-CTLEXT2<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61842\" target=\"_blank\"> 20-61842</a><br>\n        <div>"
+      }
+    },
+    "149e5923f75a456eb234db401f19a046": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          49.418676,
+          2.816466
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4c4c76e9ade34e38b6e31735b9b6d8be",
+        "title": "Vers MARGNY LES COMPI\u00c8GNE :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Communication de proximit\u00e9 et participation aupr\u00e8s de la Soci\u00e9t\u00e9 du Canal Seine-Nord Europe\n        \n        Nature : attribution\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : oui\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "bf38826fed7845969c5271c82b54b017": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "981c5e178d1049adbbe73f37a0f7e569": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4c4c76e9ade34e38b6e31735b9b6d8be": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_bf38826fed7845969c5271c82b54b017",
+        "style": "IPY_MODEL_981c5e178d1049adbbe73f37a0f7e569",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61794\" target=\"_blank\"> 20-61794</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-07-08 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['60', '62', '59', '80']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SOCIETE DU CANAL SEINE NORD EUROPE<br>\n        <b>Ville :</b> MARGNY LES COMPI\u00c8GNE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Publicit\u00e9, Communication']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Communication de proximit\u00e9 et participation aupr\u00e8s de la Soci\u00e9t\u00e9 du Canal Seine-Nord Europe<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61794\" target=\"_blank\"> 20-61794</a><br>\n        <div>"
+      }
+    },
+    "53851a6f11604d4b93c7d34f597ff260": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.85493,
+          2.30911
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5ee78ccc27b84fe1ba359ddb3a107836",
+        "title": "Vers PARIS :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        march\u00e9 2020frr01 mandats de gestion active responsable : obligations d'entreprises emises en euro\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "0064d4c5aa5342c3863f3442554570c3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b76e2a53a32e4d1e91af00edbc2f513f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5ee78ccc27b84fe1ba359ddb3a107836": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0064d4c5aa5342c3863f3442554570c3",
+        "style": "IPY_MODEL_b76e2a53a32e4d1e91af00edbc2f513f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-60387\" target=\"_blank\"> 20-60387</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-12-12 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['75']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> fonds de r\u00e9serve pour les retraites<br>\n        <b>Ville :</b> PARIS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> march\u00e9 2020frr01 mandats de gestion active responsable : obligations d'entreprises emises en euro<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-60387\" target=\"_blank\"> 20-60387</a><br>\n        <div>"
+      }
+    },
+    "24226f5b226746868623ca59473bfefd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          49.9324,
+          1.63097
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_6915f5ad4a8b48628832b2cfa7689b95",
+        "title": "Vers ROUEN :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Marche De Maitrise D Oeuvre Relatif Au Programme De Travaux De Mise En Accessibilite Des Colleges De Seine Maritime - Vague 2\n        \n        Nature : rectificatif\n        Famille : joue\n        P\u00e9rim\u00e8tre : autre\n        Statut : rectificatif\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "de1646d0a5244894b1de20a12a4c0fae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "482a58ed3129423fadecbd23f954e2e5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6915f5ad4a8b48628832b2cfa7689b95": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_de1646d0a5244894b1de20a12a4c0fae",
+        "style": "IPY_MODEL_482a58ed3129423fadecbd23f954e2e5",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61775\" target=\"_blank\"> 20-61775</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-05-15 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['76']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> DEPARTEMENT DE LA SEINE-MARITIME<br>\n        <b>Ville :</b> ROUEN<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ma\u00eetrise d'oeuvre\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Marche De Maitrise D Oeuvre Relatif Au Programme De Travaux De Mise En Accessibilite Des Colleges De Seine Maritime - Vague 2<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61775\" target=\"_blank\"> 20-61775</a><br>\n        <div>"
+      }
+    },
+    "09ac5621b2b04054b7296a2108dd3091": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.61911,
+          2.918044
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4045c92c86964b89803b27d64c48e200",
+        "title": "Vers MELUN :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        March\u00e9 global de performance (MGP) pour la conception, la construction, l'exploitation et la maintenance de la Maison D\u00e9partementale des Solidarit\u00e9s (MDS) \u00e0 COULOMMIERS\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : oui\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "4a71e82f32c3432bb2bb04f3dcc1b106": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bc3bdf52a95b45929f9b9f6b4dfd549f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4045c92c86964b89803b27d64c48e200": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_4a71e82f32c3432bb2bb04f3dcc1b106",
+        "style": "IPY_MODEL_bc3bdf52a95b45929f9b9f6b4dfd549f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61799\" target=\"_blank\"> 20-61799</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-26 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['77']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> D\u00e9partement de Seine-et-Marne<br>\n        <b>Ville :</b> MELUN<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> March\u00e9 global de performance (MGP) pour la conception, la construction, l'exploitation et la maintenance de la Maison D\u00e9partementale des Solidarit\u00e9s (MDS) \u00e0 COULOMMIERS<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61799\" target=\"_blank\"> 20-61799</a><br>\n        <div>"
+      }
+    },
+    "7e8925eb72f643e0abe740d4b0801f53": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          16.003179,
+          -61.724296
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_36016f3cc616423f9d18372df21b98d1",
+        "title": "Vers BASSE TERRE :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        mission d'appui pour la pr\u00e9paration des programmes europ\u00e9ens pour la p\u00e9riode 2021-2027\n        \n        Nature : attribution\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "0cf2f6c1f85c430dbfb2c94cf177ed0d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e925e31c5f1b4c68940079b21f286b4f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "36016f3cc616423f9d18372df21b98d1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0cf2f6c1f85c430dbfb2c94cf177ed0d",
+        "style": "IPY_MODEL_e925e31c5f1b4c68940079b21f286b4f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-34692\" target=\"_blank\"> 20-34692</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-04-15 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['971', '75']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> R\u00e9gion Guadeloupe<br>\n        <b>Ville :</b> BASSE TERRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> mission d'appui pour la pr\u00e9paration des programmes europ\u00e9ens pour la p\u00e9riode 2021-2027<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-34692\" target=\"_blank\"> 20-34692</a><br>\n        <div>"
+      }
+    },
+    "71f266eb61f844b4a398c6e207a17b50": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          16.003179,
+          -61.724296
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_415830e9fa4c46eb99c1b06a4aff918d",
+        "title": "Vers BASSE TERRE :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        prestations d'assurance pour les besoins de la r\u00e9gion guadeloupe pour la p\u00e9riode 2020-2023 (rectificatif)\n        \n        Nature : rectificatif\n        Famille : joue\n        P\u00e9rim\u00e8tre : autre\n        Statut : rectificatif\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "8d129c9271a84b819337cab827f8d202": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9b3b6dfa4e3942818dd927540a8bbde9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "415830e9fa4c46eb99c1b06a4aff918d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_8d129c9271a84b819337cab827f8d202",
+        "style": "IPY_MODEL_9b3b6dfa4e3942818dd927540a8bbde9",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61780\" target=\"_blank\"> 20-61780</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-05-28 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['971']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> R\u00e9gion Guadeloupe<br>\n        <b>Ville :</b> BASSE TERRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assurance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> prestations d'assurance pour les besoins de la r\u00e9gion guadeloupe pour la p\u00e9riode 2020-2023 (rectificatif)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61780\" target=\"_blank\"> 20-61780</a><br>\n        <div>"
+      }
+    },
+    "9d1130d3854044c799c84f1fb2f74b87": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          -12.785029,
+          45.225278
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_05c021a805934344831b9a9007d0a6d6",
+        "title": "Vers MAMOUDZOU :\n        Date de publication de l'annonce au Boamp : 2020-05-10 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Suivi animation OPAH-RU Boboka et Barakani\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "1bd76298a7e04a02aebc75c5c1622fd4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "02c2777c9a6d46e6826f779c827b7fbc": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "05c021a805934344831b9a9007d0a6d6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_1bd76298a7e04a02aebc75c5c1622fd4",
+        "style": "IPY_MODEL_02c2777c9a6d46e6826f779c827b7fbc",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61785\" target=\"_blank\"> 20-61785</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-10 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-07 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['976']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CADEMA<br>\n        <b>Ville :</b> MAMOUDZOU<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Suivi animation OPAH-RU Boboka et Barakani<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-61785\" target=\"_blank\"> 20-61785</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "bc11195a4ac84b6d899a75f5785415e9"}
+</script>
+
+</body>
+</html>
