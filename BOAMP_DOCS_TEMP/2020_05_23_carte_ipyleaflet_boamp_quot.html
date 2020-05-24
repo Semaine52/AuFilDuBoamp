@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020_05_23_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "0ef3d0dbb9fe4e87ac4540d5458d5dbb": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "4eaab871137d4165be74ea838adaa85a": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "3733c5cc1e2a47ae89cbbec3b309c577": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "0e32e2b4c41740438c25fbb8829aab8b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "689f19a94a3b452f99c02acbd0a63e1d": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "3cd309048fdd4eef8638715951776042": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_87867b3fd5bd4c6a9fc6754f40cddf3f",
+          "IPY_MODEL_0853853f2f594e86905eb23797891800",
+          "IPY_MODEL_f353e116380b41e8bb6f412480cabefe"
+        ],
+        "default_style": "IPY_MODEL_0ef3d0dbb9fe4e87ac4540d5458d5dbb",
+        "dragging_style": "IPY_MODEL_4eaab871137d4165be74ea838adaa85a",
+        "layers": [
+          "IPY_MODEL_3733c5cc1e2a47ae89cbbec3b309c577",
+          "IPY_MODEL_a0f61d25d82f42adaab39e5ac3dac2cc",
+          "IPY_MODEL_6f481309fca04f81aa47f6fb150c11c2",
+          "IPY_MODEL_49c6c052c36e40ebab2842076c15b42f",
+          "IPY_MODEL_014df964f9e14fdf9fcd33ff66d4b004",
+          "IPY_MODEL_2f8514ff255f4b25b35300916c49e1e4",
+          "IPY_MODEL_3e0cdb795b3e4052b965866cfa2f250e",
+          "IPY_MODEL_5c4853a241fb40168f5c54a0eeac8ab8",
+          "IPY_MODEL_362b65dc30c4426da7486847dff30b66",
+          "IPY_MODEL_1ec92cc989104f7faee585d043aea95d",
+          "IPY_MODEL_a87d82d6e2ce4db88d5f10e58c978c9d",
+          "IPY_MODEL_a892ac3587ce4ba5985fc6c8956ca7be",
+          "IPY_MODEL_4a025c5f79f04021bf72f6d114d57163"
+        ],
+        "layout": "IPY_MODEL_0e32e2b4c41740438c25fbb8829aab8b",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_689f19a94a3b452f99c02acbd0a63e1d",
+        "zoom": 6.0
+      }
+    },
+    "87867b3fd5bd4c6a9fc6754f40cddf3f": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "0853853f2f594e86905eb23797891800": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "f353e116380b41e8bb6f412480cabefe": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "a0f61d25d82f42adaab39e5ac3dac2cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          44.096554,
+          6.553573
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_53b55e608fb14e89abb5746b0a295765",
+        "title": "Vers SAINT ANDR\u00c9 LES ALPES :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Valorisation du site d'accueil multi-activit\u00e9s de Ratery\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "66fd7dc165df4f5aaa1ba556fe15e639": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1e7b98edfa8c4ee0b368fab5a02c2883": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "53b55e608fb14e89abb5746b0a295765": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_66fd7dc165df4f5aaa1ba556fe15e639",
+        "style": "IPY_MODEL_1e7b98edfa8c4ee0b368fab5a02c2883",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67385\" target=\"_blank\"> 20-67385</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-08-15 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['4']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ct\u00e9 Com Alpes Provence Verdon<br>\n        <b>Ville :</b> SAINT ANDR\u00c9 LES ALPES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Valorisation du site d'accueil multi-activit\u00e9s de Ratery<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67385\" target=\"_blank\"> 20-67385</a><br>\n        <div>"
+      }
+    },
+    "6f481309fca04f81aa47f6fb150c11c2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.406102,
+          -4.498893
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f5d776b552774d03bc0abc4f66f3f3cb",
+        "title": "Vers BREST :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        L'approvisionnement de barrage portuaire de type barri\u00e8re sur touret conteneuris\u00e9 destin\u00e9 \u00e0 la lutte anti-pollution.\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "66444be328c848e4b334734ad4147ba8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c9fdca16d30e48cfa90c19d09531cd91": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f5d776b552774d03bc0abc4f66f3f3cb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_66444be328c848e4b334734ad4147ba8",
+        "style": "IPY_MODEL_c9fdca16d30e48cfa90c19d09531cd91",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67125\" target=\"_blank\"> 20-67125</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-05-29 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['29', '50', '83']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> MINDEF/SCA/PFAF OUEST<br>\n        <b>Ville :</b> BREST<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Barrage', 'Construction navale']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> L'approvisionnement de barrage portuaire de type barri\u00e8re sur touret conteneuris\u00e9 destin\u00e9 \u00e0 la lutte anti-pollution.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67125\" target=\"_blank\"> 20-67125</a><br>\n        <div>"
+      }
+    },
+    "49c6c052c36e40ebab2842076c15b42f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          43.814276,
+          4.346305
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b69beaf3866d43f8b6a1a47e09df37e0",
+        "title": "Vers NIMES :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Prestations traiteur pour le Mus\u00e9e de la Romanit\u00e9 \u00e0 N\u00eemes\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "b4df44b8e3994519b7f32b96ae9a90fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a01ffcebc65b483b8b8b93fad69eb3b3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b69beaf3866d43f8b6a1a47e09df37e0": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_b4df44b8e3994519b7f32b96ae9a90fd",
+        "style": "IPY_MODEL_a01ffcebc65b483b8b8b93fad69eb3b3",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67104\" target=\"_blank\"> 20-67104</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-26 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['30']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SPL CULTURE ET PATRIMOINE<br>\n        <b>Ville :</b> NIMES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Repas, traiteur']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Prestations traiteur pour le Mus\u00e9e de la Romanit\u00e9 \u00e0 N\u00eemes<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67104\" target=\"_blank\"> 20-67104</a><br>\n        <div>"
+      }
+    },
+    "014df964f9e14fdf9fcd33ff66d4b004": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.3903,
+          7.180655
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_93cda34d672a432b80931b09071be786",
+        "title": "Vers STRASBOURG :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Acquisition de conteneurs d'apport volontaire et de pi\u00e8ces d\u00e9tach\u00e9es pour la collecte des d\u00e9chets m\u00e9nagers sur le territoire de l'Eurom\u00e9tropole de Strasbourg\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "21b331f94333425bb4c2a7d7b0580c35": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5252a80c85cb4f68accc1e80585d7eff": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "93cda34d672a432b80931b09071be786": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_21b331f94333425bb4c2a7d7b0580c35",
+        "style": "IPY_MODEL_5252a80c85cb4f68accc1e80585d7eff",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67120\" target=\"_blank\"> 20-67120</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-30 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['67']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Eurom\u00e9tropole de Strasbourg<br>\n        <b>Ville :</b> STRASBOURG<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Benne']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Acquisition de conteneurs d'apport volontaire et de pi\u00e8ces d\u00e9tach\u00e9es pour la collecte des d\u00e9chets m\u00e9nagers sur le territoire de l'Eurom\u00e9tropole de Strasbourg<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67120\" target=\"_blank\"> 20-67120</a><br>\n        <div>"
+      }
+    },
+    "2f8514ff255f4b25b35300916c49e1e4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          47.688641,
+          7.169063
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ddf20b8c17ce4474877677e67a4c567b",
+        "title": "Vers COLMAR :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        rocade ouest de colmar - mise a 2x2 voies - phase 2 : troncons \" rd 418-ligibel \" et \" d\u00e9viation de wintzenheim-rd 30 \" marche de ma\u00eetrise d'\u00bfuvre (rectificatif)\n        \n        Nature : rectificatif\n        Famille : joue\n        P\u00e9rim\u00e8tre : autre\n        Statut : rectificatif\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "11607baf74da427794e430e19df5bdd8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4b40b1fef85f4392a4d490507af77d6d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ddf20b8c17ce4474877677e67a4c567b": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_11607baf74da427794e430e19df5bdd8",
+        "style": "IPY_MODEL_4b40b1fef85f4392a4d490507af77d6d",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67138\" target=\"_blank\"> 20-67138</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-16 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['68']<br>\n        \n        <b>Nature :</b> rectificatif<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> autre<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Conseil d\u00e9partemental du Haut-Rhin<br>\n        <b>Ville :</b> COLMAR<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ma\u00eetrise d'oeuvre\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> rocade ouest de colmar - mise a 2x2 voies - phase 2 : troncons \" rd 418-ligibel \" et \" d\u00e9viation de wintzenheim-rd 30 \" marche de ma\u00eetrise d'\u00bfuvre (rectificatif)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67138\" target=\"_blank\"> 20-67138</a><br>\n        <div>"
+      }
+    },
+    "3e0cdb795b3e4052b965866cfa2f250e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.879657,
+          2.28025
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_b31dfdcee530491f8e4a2be059357d5f",
+        "title": "Vers PARIS :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Mission de coordination s\u00e9curit\u00e9 et protection de la sant\u00e9 (CSPS) - projet de Cit\u00e9 du th\u00e9\u00e2tre\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "85f0e4ea76ef4808a24f70c232cb01ea": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d0afe46819434c50a1cadb6efe35539f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b31dfdcee530491f8e4a2be059357d5f": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_85f0e4ea76ef4808a24f70c232cb01ea",
+        "style": "IPY_MODEL_d0afe46819434c50a1cadb6efe35539f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67132\" target=\"_blank\"> 20-67132</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-30 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['75']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> GIP CITE DU THEATRE<br>\n        <b>Ville :</b> PARIS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission de coordination s\u00e9curit\u00e9 et protection de la sant\u00e9 (CSPS) - projet de Cit\u00e9 du th\u00e9\u00e2tre<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67132\" target=\"_blank\"> 20-67132</a><br>\n        <div>"
+      }
+    },
+    "5c4853a241fb40168f5c54a0eeac8ab8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.842626,
+          2.221506
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_16cc718e0d774eea8304c07f28cbbdc6",
+        "title": "Vers SAINT CLOUD :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Fourniture de denr\u00e9es alimentaires et de prestations de services de restauration collective pour le compte du Centre Hospitalier D\u00e9partemental Stell\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "b8aa18deff3c49c3b11076e0304d1739": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e52d09ae700142a7b83bbf4549acaac1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "16cc718e0d774eea8304c07f28cbbdc6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_b8aa18deff3c49c3b11076e0304d1739",
+        "style": "IPY_MODEL_e52d09ae700142a7b83bbf4549acaac1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67146\" target=\"_blank\"> 20-67146</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-07-05 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['92']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> GHT 92<br>\n        <b>Ville :</b> SAINT CLOUD<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Restauration collective', 'Denr\u00e9es alimentaires']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture de denr\u00e9es alimentaires et de prestations de services de restauration collective pour le compte du Centre Hospitalier D\u00e9partemental Stell<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67146\" target=\"_blank\"> 20-67146</a><br>\n        <div>"
+      }
+    },
+    "362b65dc30c4426da7486847dff30b66": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.902605,
+          2.388841
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_5dc280c12d3a413397de1b116682f7e1",
+        "title": "Vers AUBERVILLIERS :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        20MO01\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "bf7b445682c54f809b3e37db4ea6a32c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5848ae3f900a47699bf93cf8b0ef36fb": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5dc280c12d3a413397de1b116682f7e1": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_bf7b445682c54f809b3e37db4ea6a32c",
+        "style": "IPY_MODEL_5848ae3f900a47699bf93cf8b0ef36fb",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67105\" target=\"_blank\"> 20-67105</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-26 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['93']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> OPH AUBERVILLIERS<br>\n        <b>Ville :</b> AUBERVILLIERS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude', 'Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> 20MO01<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67105\" target=\"_blank\"> 20-67105</a><br>\n        <div>"
+      }
+    },
+    "1ec92cc989104f7faee585d043aea95d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.932209,
+          2.217148
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_72cac9fe42db45a1b71448c3de49ab68",
+        "title": "Vers BEZONS :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Accord-cadre relatif prestations de nettoyage urbain sur la ville de Bezons\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "af56d4dd3bb94cdaafd22daad418cae2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d0ed85923bfb470f96f6d68b34daf750": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "72cac9fe42db45a1b71448c3de49ab68": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_af56d4dd3bb94cdaafd22daad418cae2",
+        "style": "IPY_MODEL_d0ed85923bfb470f96f6d68b34daf750",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67143\" target=\"_blank\"> 20-67143</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-22 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['95']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE BEZONS<br>\n        <b>Ville :</b> BEZONS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Nettoyage urbain', 'Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Accord-cadre relatif prestations de nettoyage urbain sur la ville de Bezons<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67143\" target=\"_blank\"> 20-67143</a><br>\n        <div>"
+      }
+    },
+    "a87d82d6e2ce4db88d5f10e58c978c9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          16.225758,
+          -61.390514
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_84c90305acd045bf8cbd268572b4a9f8",
+        "title": "Vers SAINTE ANNE :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        prestations de d\u00e9ratisations, de d\u00e9sinsectisation et de d\u00e9sinfection sur le territoire de la commune de sainte-anne\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "cea9ed47006c41a590057513142e60bf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bd56bec03e4f43308d75c176289fb4d8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "84c90305acd045bf8cbd268572b4a9f8": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_cea9ed47006c41a590057513142e60bf",
+        "style": "IPY_MODEL_bd56bec03e4f43308d75c176289fb4d8",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67108\" target=\"_blank\"> 20-67108</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-26 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['971']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Mairie de sainte-anne<br>\n        <b>Ville :</b> SAINTE ANNE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['D\u00e9ratisation, d\u00e9sinsectisation']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> prestations de d\u00e9ratisations, de d\u00e9sinsectisation et de d\u00e9sinfection sur le territoire de la commune de sainte-anne<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67108\" target=\"_blank\"> 20-67108</a><br>\n        <div>"
+      }
+    },
+    "a892ac3587ce4ba5985fc6c8956ca7be": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          -12.764629,
+          45.075293
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c26b001431ef42ea827cac6084416b85",
+        "title": "Vers DZOUMOGN\u00c9 :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Mission CSPS relative \u00e0 la r\u00e9habilitation de la d\u00e9charge de Chirongui.\n        \n        Nature : appeloffre\n        Famille : mapa\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "306c64f51e2d44abb620968a0ec20434": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e94c5b0012e64c09abb7e53b03e0c871": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c26b001431ef42ea827cac6084416b85": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_306c64f51e2d44abb620968a0ec20434",
+        "style": "IPY_MODEL_e94c5b0012e64c09abb7e53b03e0c871",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67387\" target=\"_blank\"> 20-67387</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-22 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['976']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> mapa<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SIDEVAM<br>\n        <b>Ville :</b> DZOUMOGN\u00c9<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Abonnement']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission CSPS relative \u00e0 la r\u00e9habilitation de la d\u00e9charge de Chirongui.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67387\" target=\"_blank\"> 20-67387</a><br>\n        <div>"
+      }
+    },
+    "4a025c5f79f04021bf72f6d114d57163": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          -12.764629,
+          45.075293
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_0c430c47c6cf481d8efb8992050dd887",
+        "title": "Vers DZOUMOGN\u00c9 :\n        Date de publication de l'annonce au Boamp : 2020-05-23 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        MISSION CSPS RELATIVE A LA REHABILITATION DE LA DECHARGE DE DZOUMOGNE\n        \n        Nature : appeloffre\n        Famille : mapa\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "c4fa10029bdd4e8a9c70eaaa64202a93": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "69b8e9dd5439429aa753aa53bc9962e9": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0c430c47c6cf481d8efb8992050dd887": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c4fa10029bdd4e8a9c70eaaa64202a93",
+        "style": "IPY_MODEL_69b8e9dd5439429aa753aa53bc9962e9",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67389\" target=\"_blank\"> 20-67389</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-05-23 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-06-22 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['976']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> mapa<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SIDEVAM<br>\n        <b>Ville :</b> DZOUMOGN\u00c9<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Abonnement']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> MISSION CSPS RELATIVE A LA REHABILITATION DE LA DECHARGE DE DZOUMOGNE<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-67389\" target=\"_blank\"> 20-67389</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "3cd309048fdd4eef8638715951776042"}
+</script>
+
+</body>
+</html>
