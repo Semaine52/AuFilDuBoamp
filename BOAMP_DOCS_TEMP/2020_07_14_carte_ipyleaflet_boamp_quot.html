@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020_07_14_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "d0dcdc839f66492580268c455ef5f410": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "415a4f1a0178409cb8285569ee54e8cf": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "e5c69333a88741158f8b0a4fa0e41ca3": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "b8ba644e22f6458d9066ab7ad383d771": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fe49a42c9dc749caab241d3969233787": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {}
+    },
+    "bb0c1c5086dd43ec8559f01212a49f60": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_f04fda1bd8cf4172bf6d5d581bfc374e",
+          "IPY_MODEL_43ee50a543ab40f28adb314b87488354",
+          "IPY_MODEL_28614058709f49a9a05d4a3327e98c7d"
+        ],
+        "default_style": "IPY_MODEL_d0dcdc839f66492580268c455ef5f410",
+        "dragging_style": "IPY_MODEL_415a4f1a0178409cb8285569ee54e8cf",
+        "layers": [
+          "IPY_MODEL_e5c69333a88741158f8b0a4fa0e41ca3",
+          "IPY_MODEL_41da92ca4ee644d98d0dc937f505e1db",
+          "IPY_MODEL_4125c87ad8884072a197f70424e1617c",
+          "IPY_MODEL_76bc46f9f00746738f1e08ee5a4a3fb0",
+          "IPY_MODEL_b4ad5b88e52d413bbdaff54923cfc4df",
+          "IPY_MODEL_96fb9ce60af8469bb3b64f25f87416b0"
+        ],
+        "layout": "IPY_MODEL_b8ba644e22f6458d9066ab7ad383d771",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_fe49a42c9dc749caab241d3969233787",
+        "zoom": 6.0
+      }
+    },
+    "f04fda1bd8cf4172bf6d5d581bfc374e": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "43ee50a543ab40f28adb314b87488354": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "28614058709f49a9a05d4a3327e98c7d": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "41da92ca4ee644d98d0dc937f505e1db": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          43.601051,
+          5.497456
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_aae8a40a5de94b24991b6da90859f98a",
+        "title": "Vers VENELLES :\n        Date de publication de l'annonce au Boamp : 2020-07-14 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        TRAVAUX DE R\u00c9AM\u00c9NAGEMENT ET DE S\u00c9CURISATION DE L'ANCIEN CHEMIN DU STADE\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "cea20596509046b1a7dce0323955086f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "25f9f74d5d134c098a911f6d9eca6406": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "aae8a40a5de94b24991b6da90859f98a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_cea20596509046b1a7dce0323955086f",
+        "style": "IPY_MODEL_25f9f74d5d134c098a911f6d9eca6406",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89995\" target=\"_blank\"> 20-89995</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-07-14 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-08-08 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['13']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Mairie de Venelles<br>\n        <b>Ville :</b> VENELLES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Terrassement', 'Voirie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> TRAVAUX DE R\u00c9AM\u00c9NAGEMENT ET DE S\u00c9CURISATION DE L'ANCIEN CHEMIN DU STADE<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89995\" target=\"_blank\"> 20-89995</a><br>\n        <div>"
+      }
+    },
+    "4125c87ad8884072a197f70424e1617c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          49.038664,
+          2.803589
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4e86667d68fd4816a79ef96b1f1057bb",
+        "title": "Vers MARNE LA VALL\u00c9E :\n        Date de publication de l'annonce au Boamp : 2020-07-14 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Tierce maintenance applicative de l'application FOLIOS de l'Onisep\n        \n        Nature : attribution\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "18ef6b17574a404b9d5425c748769c03": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "014cbab1b8f745489aa55222ac0ed8d8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4e86667d68fd4816a79ef96b1f1057bb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_18ef6b17574a404b9d5425c748769c03",
+        "style": "IPY_MODEL_014cbab1b8f745489aa55222ac0ed8d8",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89668\" target=\"_blank\"> 20-89668</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-07-14 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-08-18 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['77']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> ONISEP<br>\n        <b>Ville :</b> MARNE LA VALL\u00c9E<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Informatique (prestations de services)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Tierce maintenance applicative de l'application FOLIOS de l'Onisep<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89668\" target=\"_blank\"> 20-89668</a><br>\n        <div>"
+      }
+    },
+    "76bc46f9f00746738f1e08ee5a4a3fb0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.081039,
+          3.298084
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_99ad1968d83d48048cbb6cb49487c673",
+        "title": "Vers VILLENEUVE SUR YONNE :\n        Date de publication de l'annonce au Boamp : 2020-07-14 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Fourniture des repas en liaison froide et leur distribution pour le restaurant scolaire de Villeneuve sur Yonne\n        \n        Nature : appeloffre\n        Famille : mapa\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "eaaad3bee9424867a291e8e8b336de4e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a3f6a99ca78745cea21f8c7cbb8858a1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "99ad1968d83d48048cbb6cb49487c673": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_eaaad3bee9424867a291e8e8b336de4e",
+        "style": "IPY_MODEL_a3f6a99ca78745cea21f8c7cbb8858a1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89996\" target=\"_blank\"> 20-89996</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-07-14 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-09-12 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['89']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> mapa<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE VILLENEUVE SUR YONNE<br>\n        <b>Ville :</b> VILLENEUVE SUR YONNE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture des repas en liaison froide et leur distribution pour le restaurant scolaire de Villeneuve sur Yonne<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89996\" target=\"_blank\"> 20-89996</a><br>\n        <div>"
+      }
+    },
+    "b4ad5b88e52d413bbdaff54923cfc4df": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.789577,
+          2.288776
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_e165c9794caf4915a6fe6404bde046a6",
+        "title": "Vers FONTENAY AUX ROSES :\n        Date de publication de l'annonce au Boamp : 2020-07-14 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Assistance \u00e0 ma\u00eetrise d'ouvrage pour la conception, construction, exploitation technique et l'obtention d'une certification environnementale relative \u00e0 la construction d'un ensembl\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "7d730cc40d7540b386403c4ce81e9f86": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "99a6b736ba244015a6c1a4c3af760c17": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e165c9794caf4915a6fe6404bde046a6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_7d730cc40d7540b386403c4ce81e9f86",
+        "style": "IPY_MODEL_99a6b736ba244015a6c1a4c3af760c17",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-90009\" target=\"_blank\"> 20-90009</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-07-14 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-08-25 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['92']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Vall\u00e9e Sud - Grand Paris<br>\n        <b>Ville :</b> FONTENAY AUX ROSES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Assistance \u00e0 ma\u00eetrise d'ouvrage\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Assistance \u00e0 ma\u00eetrise d'ouvrage pour la conception, construction, exploitation technique et l'obtention d'une certification environnementale relative \u00e0 la construction d'un ensembl<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-90009\" target=\"_blank\"> 20-90009</a><br>\n        <div>"
+      }
+    },
+    "96fb9ce60af8469bb3b64f25f87416b0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.12.4",
+      "state": {
+        "draggable": false,
+        "location": [
+          -21.265657,
+          55.333604
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_059f9e723c4a4e6290b73b731617aee6",
+        "title": "Vers SAINT DENIS :\n        Date de publication de l'annonce au Boamp : 2020-07-14 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        fourniture de mobilier professionnel destin\u00e9 aux futurs locaux de la direction de la mer sud oc\u00e9an indien (dmsoi).\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "2f36e52c7da347a8afe7557d1cb0c94c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "271bcb27f08247b6973c85724f75782e": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "059f9e723c4a4e6290b73b731617aee6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2f36e52c7da347a8afe7557d1cb0c94c",
+        "style": "IPY_MODEL_271bcb27f08247b6973c85724f75782e",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89692\" target=\"_blank\"> 20-89692</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2020-07-14 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2020-08-03 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['974', '976']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> PREFECTURE DE LA REUNION<br>\n        <b>Ville :</b> SAINT DENIS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Mobilier', 'Rayonnage']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> fourniture de mobilier professionnel destin\u00e9 aux futurs locaux de la direction de la mer sud oc\u00e9an indien (dmsoi).<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-89692\" target=\"_blank\"> 20-89692</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "bb0c1c5086dd43ec8559f01212a49f60"}
+</script>
+
+</body>
+</html>
