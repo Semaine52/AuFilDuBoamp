@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2021_04_05_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "6bd3ba3106ed4c9587e489917b31458b": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {}
+    },
+    "167c215a043d47768be6a727e0e197e7": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "8464da3d9fd24cdc9fd7d7b928de93b7": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "6fab0b1f4e5c49a1964678be363e218e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d2ffc5da8112401fa0e5ee5d3405bfa3": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {}
+    },
+    "0b3e8954cfcc48ecbc72d382e232e974": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_8376bb362ba448f0a67a5ca87af5c34d",
+          "IPY_MODEL_bfbd2a1f462748b48e2ae0aff2bceadc",
+          "IPY_MODEL_fd874b9f7c2c42d294f48a2eddd008f5"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_6bd3ba3106ed4c9587e489917b31458b",
+        "dragging_style": "IPY_MODEL_167c215a043d47768be6a727e0e197e7",
+        "layers": [
+          "IPY_MODEL_8464da3d9fd24cdc9fd7d7b928de93b7",
+          "IPY_MODEL_8ad7c7f11636483b839d8dfb3f00fc1d",
+          "IPY_MODEL_eb8ffadb8136401f9fee7dc156e7d98d",
+          "IPY_MODEL_ef9cbd9790904d5dbf1d6ebf352fd292",
+          "IPY_MODEL_7b1ba658f78545a6b552c72590f95bd1",
+          "IPY_MODEL_31684dccd92e4dcb8b7e0fdc269b7009"
+        ],
+        "layout": "IPY_MODEL_6fab0b1f4e5c49a1964678be363e218e",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_d2ffc5da8112401fa0e5ee5d3405bfa3",
+        "zoom": 6.0
+      }
+    },
+    "8376bb362ba448f0a67a5ca87af5c34d": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "bfbd2a1f462748b48e2ae0aff2bceadc": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "fd874b9f7c2c42d294f48a2eddd008f5": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "8ad7c7f11636483b839d8dfb3f00fc1d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          47.624949,
+          -0.432668
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_1c0e2e184eef4b6386dee18321f0b9e2",
+        "title": "Vers TIERC\u00c9 :\n        Date de publication de l'annonce au Boamp : 2021-04-05 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        MISSIONS DE MA\u00ceTRISE D'OEUVRE BATIMENTS, ASSAINISSEMENT ET VRD - PHASE CANDIDATURE\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "d447d1611f5c4afa8ed13e66072a0cee": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bc32d68625c7416f8cc692b72d4a7977": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1c0e2e184eef4b6386dee18321f0b9e2": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_d447d1611f5c4afa8ed13e66072a0cee",
+        "style": "IPY_MODEL_bc32d68625c7416f8cc692b72d4a7977",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45349\" target=\"_blank\"> 21-45349</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-04-05 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-05-09 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['49']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> ANJOU LOIR ET SARTHE<br>\n        <b>Ville :</b> TIERC\u00c9<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Assainissement', 'B\u00e2timent', \"Ma\u00eetrise d'oeuvre\", 'Voirie et r\u00e9seaux divers']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> MISSIONS DE MA\u00ceTRISE D'OEUVRE BATIMENTS, ASSAINISSEMENT ET VRD - PHASE CANDIDATURE<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45349\" target=\"_blank\"> 21-45349</a><br>\n        <div>"
+      }
+    },
+    "eb8ffadb8136401f9fee7dc156e7d98d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          50.890016,
+          2.543424
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_935e258bf1064de48559bb24ddd42dcb",
+        "title": "Vers VALENCIENNES :\n        Date de publication de l'annonce au Boamp : 2021-04-05 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        travaux de requalification des espaces publics des cit\u00e9s hardy ballanger \u00e0 fresnes-sur-escaut\n        \n        Nature : attribution\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : oui\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "9556940f1e60411ea1fdbefeca9f2bd9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "aa2c21adc8074282a3ce40c5d602eb30": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "935e258bf1064de48559bb24ddd42dcb": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9556940f1e60411ea1fdbefeca9f2bd9",
+        "style": "IPY_MODEL_aa2c21adc8074282a3ce40c5d602eb30",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-79791\" target=\"_blank\"> 20-79791</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-04-05 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-12-31 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['59']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ct\u00e9 d'Agglo Valenciennes M\u00e9tropole<br>\n        <b>Ville :</b> VALENCIENNES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Alimentation en eau potable', 'Assainissement', 'Eclairage public', 'Espaces verts', 'Serrurerie', 'Signalisation', 'Terrassement', 'Voirie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> travaux de requalification des espaces publics des cit\u00e9s hardy ballanger \u00e0 fresnes-sur-escaut<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/20-79791\" target=\"_blank\"> 20-79791</a><br>\n        <div>"
+      }
+    },
+    "ef9cbd9790904d5dbf1d6ebf352fd292": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.758466,
+          4.724603
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7d281c20446944d095e59bd240fd7c9a",
+        "title": "Vers LYON :\n        Date de publication de l'annonce au Boamp : 2021-04-05 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Fourniture d'un acc\u00e8s f\u00e9d\u00e9ral au r\u00e9seau internet pour la Ville de Lyon\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "ece31565d272440eb51458030a5aa611": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8eec9ee69e1d482b872e347e0e2005d7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7d281c20446944d095e59bd240fd7c9a": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ece31565d272440eb51458030a5aa611",
+        "style": "IPY_MODEL_8eec9ee69e1d482b872e347e0e2005d7",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45330\" target=\"_blank\"> 21-45330</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-04-05 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-05-06 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['69']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Lyon<br>\n        <b>Ville :</b> LYON<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Informatique (prestations de services)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Fourniture d'un acc\u00e8s f\u00e9d\u00e9ral au r\u00e9seau internet pour la Ville de Lyon<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45330\" target=\"_blank\"> 21-45330</a><br>\n        <div>"
+      }
+    },
+    "7b1ba658f78545a6b552c72590f95bd1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.936816,
+          2.471411
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_c57b1dfcdd6949e5a312d547261ee60e",
+        "title": "Vers LE BLANC MESNIL :\n        Date de publication de l'annonce au Boamp : 2021-04-05 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Concession de service public portant sur la gestion et l'exploitation du march\u00e9 forain\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive23\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "75c6e8e5fdda4a5f9f6a145438850013": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ebf3812f4ec34d8bbae4575d5e4def22": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c57b1dfcdd6949e5a312d547261ee60e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_75c6e8e5fdda4a5f9f6a145438850013",
+        "style": "IPY_MODEL_ebf3812f4ec34d8bbae4575d5e4def22",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45332\" target=\"_blank\"> 21-45332</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-04-05 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-04-28 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['93']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive23<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE BLANC MESNIL<br>\n        <b>Ville :</b> LE BLANC MESNIL<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['D\u00e9l\u00e9gation de service public']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Concession de service public portant sur la gestion et l'exploitation du march\u00e9 forain<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45332\" target=\"_blank\"> 21-45332</a><br>\n        <div>"
+      }
+    },
+    "31684dccd92e4dcb8b7e0fdc269b7009": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          16.218233,
+          -61.460797
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_ec6544b35e904c6f812ef6eedd922fa6",
+        "title": "Vers LE GOSIER :\n        Date de publication de l'annonce au Boamp : 2021-04-05 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Services d'entretien par curage et hydrocurage des r\u00e9seaux d'eaux pluviales avec prestations associ\u00e9es sur le territoire de la Communaut\u00e9 d'Agglom\u00e9ration la Riviera du Levant(CARL)(noAO\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : oui\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "5a7f01c186804a87a01d03dcedb5bc01": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "26a7f5213212467b961ad529c1859757": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ec6544b35e904c6f812ef6eedd922fa6": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_5a7f01c186804a87a01d03dcedb5bc01",
+        "style": "IPY_MODEL_26a7f5213212467b961ad529c1859757",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45353\" target=\"_blank\"> 21-45353</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-04-05 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-05-04 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['971']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> oui<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNAUTE D AGL LA RIVIERA DU LEVANT<br>\n        <b>Ville :</b> LE GOSIER<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Curage']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Services d'entretien par curage et hydrocurage des r\u00e9seaux d'eaux pluviales avec prestations associ\u00e9es sur le territoire de la Communaut\u00e9 d'Agglom\u00e9ration la Riviera du Levant(CARL)(noAO<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-45353\" target=\"_blank\"> 21-45353</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0b3e8954cfcc48ecbc72d382e232e974"}
+</script>
+
+</body>
+</html>
