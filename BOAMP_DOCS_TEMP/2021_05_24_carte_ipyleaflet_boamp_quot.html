@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2021_05_24_carte_ipyleaflet_boamp_quot</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "52b9b79e23674e0abd87be6bd202438b": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {}
+    },
+    "2fea6ed42073407f9ee05b8b86ddbd38": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "fb5ffe2249514f3e91a6e5c988d03c78": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "72fcffc381ec4ab2914c86713f9a9ae2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a72becf6bcb94adaa1ba7f1f100ce6c1": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {}
+    },
+    "e2f4dd79eb794110bde93ee2dd178516": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          48.86,
+          2.33
+        ],
+        "controls": [
+          "IPY_MODEL_c30dddd972284ddd82cc3a72b0fd0df3",
+          "IPY_MODEL_8d076fc7b03f49a0941fc4623070a6c0",
+          "IPY_MODEL_4e4d5b2cca1e40b5ba2d456389a4b1f1"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_52b9b79e23674e0abd87be6bd202438b",
+        "dragging_style": "IPY_MODEL_2fea6ed42073407f9ee05b8b86ddbd38",
+        "layers": [
+          "IPY_MODEL_fb5ffe2249514f3e91a6e5c988d03c78",
+          "IPY_MODEL_76e23f787afa47b8a7620c7684af4b3a",
+          "IPY_MODEL_1aff6ade6eb04b89b0e234dd822ce70d",
+          "IPY_MODEL_bba4b11b284f42c2961a878d5b2d98e0",
+          "IPY_MODEL_dedaf35ea0dc4589af74e5541af7fbbf",
+          "IPY_MODEL_49db2d145b5747f2902bf8a62ea33601",
+          "IPY_MODEL_c4b7e8c3a62d4f689c53d61db0a5b709",
+          "IPY_MODEL_7cb37e4a722546b1b45b47738febfd56",
+          "IPY_MODEL_60f5b5b0f8894fb3b35f0ef7e6571471",
+          "IPY_MODEL_b022255f46ad419196056a1fcd55fd49",
+          "IPY_MODEL_71b6e06add8742029f15d0e7f1d4c363",
+          "IPY_MODEL_a8b621c7572e4e7cacff79e5bb8945d7",
+          "IPY_MODEL_a4b34fe4ab8f4b58966028401cd136d9",
+          "IPY_MODEL_d5981e4733a64d8b98c268c1a55e44fa"
+        ],
+        "layout": "IPY_MODEL_72fcffc381ec4ab2914c86713f9a9ae2",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_a72becf6bcb94adaa1ba7f1f100ce6c1",
+        "zoom": 6.0
+      }
+    },
+    "c30dddd972284ddd82cc3a72b0fd0df3": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "8d076fc7b03f49a0941fc4623070a6c0": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "4e4d5b2cca1e40b5ba2d456389a4b1f1": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "76e23f787afa47b8a7620c7684af4b3a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          49.045635,
+          3.40092
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_86fe3d2572d84024b557f58f61d32336",
+        "title": "Vers CH\u00c2TEAU THIERRY :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Mission d'assistance \u00e0 la ma\u00eetrise d'ouvrage pour la construction d'un \u00e9tablissement d'accueil du jeune enfant sur le quartier des Vaucrises \u00e0 Ch\u00e2teau-Thierry-.\n        \n        Nature : appeloffre\n        Famille : mapa\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "ef1c175745864fd0a58fbb8d0d20c692": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d7a25c8ff4b5429a9d96ffe9d4003449": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "86fe3d2572d84024b557f58f61d32336": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ef1c175745864fd0a58fbb8d0d20c692",
+        "style": "IPY_MODEL_d7a25c8ff4b5429a9d96ffe9d4003449",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69458\" target=\"_blank\"> 21-69458</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-14 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['2']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> mapa<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CA DE LA REGION DE CHATEAU THIERRY<br>\n        <b>Ville :</b> CH\u00c2TEAU THIERRY<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etude']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission d'assistance \u00e0 la ma\u00eetrise d'ouvrage pour la construction d'un \u00e9tablissement d'accueil du jeune enfant sur le quartier des Vaucrises \u00e0 Ch\u00e2teau-Thierry-.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69458\" target=\"_blank\"> 21-69458</a><br>\n        <div>"
+      }
+    },
+    "1aff6ade6eb04b89b0e234dd822ce70d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.018629,
+          -4.083741
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_7f7def713184456e8c14ae7b351e5bab",
+        "title": "Vers QUIMPER :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        March\u00e9 de ma\u00eetrise d'oeuvre pour la r\u00e9novation du b\u00e2timent d'accueil de l'\u00e9comus\u00e9e des monts d'Arr\u00e9e - Commana\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "0bdbe648ee2448c9a84c6a824a5ed986": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3e68c3039d9648bdb82d04880b9292e8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "7f7def713184456e8c14ae7b351e5bab": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0bdbe648ee2448c9a84c6a824a5ed986",
+        "style": "IPY_MODEL_3e68c3039d9648bdb82d04880b9292e8",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69422\" target=\"_blank\"> 21-69422</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-21 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['29', '22']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> MUSEES DE TERRITOIRES FINISTERIENS<br>\n        <b>Ville :</b> QUIMPER<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent', \"Ma\u00eetrise d'oeuvre\", 'Ing\u00e9nierie']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> March\u00e9 de ma\u00eetrise d'oeuvre pour la r\u00e9novation du b\u00e2timent d'accueil de l'\u00e9comus\u00e9e des monts d'Arr\u00e9e - Commana<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69422\" target=\"_blank\"> 21-69422</a><br>\n        <div>"
+      }
+    },
+    "bba4b11b284f42c2961a878d5b2d98e0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          47.654162,
+          -2.093141
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_689609abbb5f431a9987da1c77e23b04",
+        "title": "Vers REDON :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        La pr\u00e9sente consultation concerne les am\u00e9nagements connexes \u00e0 la passerelle mobile du Port de Plaisance dans le cadre de l'op\u00e9ration Confluences 2030.Travaux de voirie, r\u00e9seaux, espaces verts e\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "f2268a0e23ed42e2bd6e3f186ed545a2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d0f52cf9de4a4fcf8e91024c89a8a54c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "689609abbb5f431a9987da1c77e23b04": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_f2268a0e23ed42e2bd6e3f186ed545a2",
+        "style": "IPY_MODEL_d0f52cf9de4a4fcf8e91024c89a8a54c",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69480\" target=\"_blank\"> 21-69480</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-15 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['35']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville de Redon<br>\n        <b>Ville :</b> REDON<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Voirie et r\u00e9seaux divers']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> La pr\u00e9sente consultation concerne les am\u00e9nagements connexes \u00e0 la passerelle mobile du Port de Plaisance dans le cadre de l'op\u00e9ration Confluences 2030.Travaux de voirie, r\u00e9seaux, espaces verts e<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69480\" target=\"_blank\"> 21-69480</a><br>\n        <div>"
+      }
+    },
+    "dedaf35ea0dc4589af74e5541af7fbbf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.091133,
+          2.789367
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_923069a22ca84a5486a6542fc949bd20",
+        "title": "Vers FERRIERES EN GATINIAS :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Projet de r\u00e9novation thermique du groupe scolaire de la Cl\u00e9ryRue Sainte Apolline45210 FERRIERES EN GATINAIS\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : rectificatif\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : oui\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "2ad11cbd4ad04f5f8a38b4e3bb4956ae": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "1be593709b8b446dbbde849190a13eb7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "923069a22ca84a5486a6542fc949bd20": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2ad11cbd4ad04f5f8a38b4e3bb4956ae",
+        "style": "IPY_MODEL_1be593709b8b446dbbde849190a13eb7",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69464\" target=\"_blank\"> 21-69464</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-16 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['45']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> rectificatif<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> oui<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE FERRIERES EN GATINAIS<br>\n        <b>Ville :</b> FERRIERES EN GATINIAS<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['B\u00e2timent', 'Equipement thermique']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Projet de r\u00e9novation thermique du groupe scolaire de la Cl\u00e9ryRue Sainte Apolline45210 FERRIERES EN GATINAIS<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69464\" target=\"_blank\"> 21-69464</a><br>\n        <div>"
+      }
+    },
+    "49db2d145b5747f2902bf8a62ea33601": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.716695,
+          0.063913
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_52a9ce032c854cd48e30b4fd4c499345",
+        "title": "Vers ALEN\u00c7ON :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Prestations de t\u00e9l\u00e9assistance et de convivialit\u00e9 aupr\u00e8s des personnes \u00e2g\u00e9es Alen\u00e7onnaises pour le CCAS de la Ville d'Alen\u00e7on\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "dd6d750671d74798a8d51e89fefd51bb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8965fa3f84834f27bcdd0835fb889656": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "52a9ce032c854cd48e30b4fd4c499345": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_dd6d750671d74798a8d51e89fefd51bb",
+        "style": "IPY_MODEL_8965fa3f84834f27bcdd0835fb889656",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69426\" target=\"_blank\"> 21-69426</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-23 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['61']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Ville d'Alen\u00e7on<br>\n        <b>Ville :</b> ALEN\u00c7ON<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Prestations de services']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Prestations de t\u00e9l\u00e9assistance et de convivialit\u00e9 aupr\u00e8s des personnes \u00e2g\u00e9es Alen\u00e7onnaises pour le CCAS de la Ville d'Alen\u00e7on<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69426\" target=\"_blank\"> 21-69426</a><br>\n        <div>"
+      }
+    },
+    "c4b7e8c3a62d4f689c53d61db0a5b709": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          43.318142,
+          -0.346561
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_2712c27d8eb1404c92e3ddd137ca806d",
+        "title": "Vers PAU :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Maintenance des compresseurs\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "8fa7734141284cac8fb908d527d3d83a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9c6f9a414e664457ab64c14085c569a3": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2712c27d8eb1404c92e3ddd137ca806d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_8fa7734141284cac8fb908d527d3d83a",
+        "style": "IPY_MODEL_9c6f9a414e664457ab64c14085c569a3",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69427\" target=\"_blank\"> 21-69427</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-16 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['64']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CA PAU BEARN PYRENEES<br>\n        <b>Ville :</b> PAU<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Maintenance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Maintenance des compresseurs<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69427\" target=\"_blank\"> 21-69427</a><br>\n        <div>"
+      }
+    },
+    "7cb37e4a722546b1b45b47738febfd56": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          43.318142,
+          -0.346561
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9bd43d42a54648c5ab6de502936be7c9",
+        "title": "Vers PAU :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Audits clos couvert b\u00e2timents communaux et intercommunaux\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "bdb74e63af6943a48e406d9fe886b477": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cf5cc0cd445c4c5eb99cbdfdfbb7bab2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9bd43d42a54648c5ab6de502936be7c9": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_bdb74e63af6943a48e406d9fe886b477",
+        "style": "IPY_MODEL_cf5cc0cd445c4c5eb99cbdfdfbb7bab2",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69448\" target=\"_blank\"> 21-69448</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-22 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['64']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CA PAU BEARN PYRENEES<br>\n        <b>Ville :</b> PAU<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Audit']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Audits clos couvert b\u00e2timents communaux et intercommunaux<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69448\" target=\"_blank\"> 21-69448</a><br>\n        <div>"
+      }
+    },
+    "60f5b5b0f8894fb3b35f0ef7e6571471": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.774186,
+          4.874237
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_bf12b620744745dcb4010fea07da6011",
+        "title": "Vers VILLEURBANNE :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        La pr\u00e9sente consultation concerne la r\u00e9alisation de diagnostics immobiliers, rep\u00e9rage amiante et plomb sur le patrimoine de la Soci\u00e9t\u00e9 Villeurbannaise d'Urbanisme (SVU)\n        \n        Nature : attribution\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "2d4fa5593a1b48e99e977bfb84bfa9b2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "65e3686ce30e4e31a073738b2b723c85": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bf12b620744745dcb4010fea07da6011": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2d4fa5593a1b48e99e977bfb84bfa9b2",
+        "style": "IPY_MODEL_65e3686ce30e4e31a073738b2b723c85",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69425\" target=\"_blank\"> 21-69425</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-20 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['69']<br>\n        \n        <b>Nature :</b> attribution<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> Soci\u00e9t\u00e9 Villeurbannaise d'urbanisme<br>\n        <b>Ville :</b> VILLEURBANNE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Amiante (diagnostic)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> La pr\u00e9sente consultation concerne la r\u00e9alisation de diagnostics immobiliers, rep\u00e9rage amiante et plomb sur le patrimoine de la Soci\u00e9t\u00e9 Villeurbannaise d'Urbanisme (SVU)<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69425\" target=\"_blank\"> 21-69425</a><br>\n        <div>"
+      }
+    },
+    "b022255f46ad419196056a1fcd55fd49": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          49.805632,
+          1.051032
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_9b7865694745476ab71c466235df305e",
+        "title": "Vers LE HAVRE :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Groupement de commandes Communaut\u00e9 Urbaine Le Havre Seine M\u00e9tropole / Ville du Havre - Fourniture de v\u00e9hicules l\u00e9gers et utilitaires avec prestations annexes\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "ae543c530bd142eab3ea8f4cb14713b3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "91bdfc485a4647f8a0fb32e26573dfd1": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9b7865694745476ab71c466235df305e": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ae543c530bd142eab3ea8f4cb14713b3",
+        "style": "IPY_MODEL_91bdfc485a4647f8a0fb32e26573dfd1",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69389\" target=\"_blank\"> 21-69389</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-07-08 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['76']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> LE HAVRE SEINE METROPOLE<br>\n        <b>Ville :</b> LE HAVRE<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['V\u00e9hicules (acquisition)']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Groupement de commandes Communaut\u00e9 Urbaine Le Havre Seine M\u00e9tropole / Ville du Havre - Fourniture de v\u00e9hicules l\u00e9gers et utilitaires avec prestations annexes<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69389\" target=\"_blank\"> 21-69389</a><br>\n        <div>"
+      }
+    },
+    "71b6e06add8742029f15d0e7f1d4c363": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.721171,
+          1.895613
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_f8b4761120db45d68c84489276183923",
+        "title": "Vers LES ESSARTS LE ROI :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Mission de ma\u00eetrise d'oeuvre - travaux d'am\u00e9lioration de la station d'\u00e9puration du SIASYL\u00e9vis Saint Nom - Les Essarts-le-Roi\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "1392d8654d0146faaf843d243396c491": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "791c0ddd0511487994a8bec7fad7998f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f8b4761120db45d68c84489276183923": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_1392d8654d0146faaf843d243396c491",
+        "style": "IPY_MODEL_791c0ddd0511487994a8bec7fad7998f",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69485\" target=\"_blank\"> 21-69485</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-24 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['78']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> SYND INTERCOM ASSAIN SOURCES DE YVETTE<br>\n        <b>Ville :</b> LES ESSARTS LE ROI<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Ma\u00eetrise d'oeuvre\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission de ma\u00eetrise d'oeuvre - travaux d'am\u00e9lioration de la station d'\u00e9puration du SIASYL\u00e9vis Saint Nom - Les Essarts-le-Roi<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69485\" target=\"_blank\"> 21-69485</a><br>\n        <div>"
+      }
+    },
+    "a8b621c7572e4e7cacff79e5bb8945d7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          45.685644,
+          0.928488
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_14ddb4219e0f448d91e2d811fcc8a43c",
+        "title": "Vers LIMOGES :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        travaux d'\u00e9tanch\u00e9it\u00e9 dans le cadre de la r\u00e9habilitation de la cit\u00e9 universitaire de l'aurence\n        \n        Nature : appeloffre\n        Famille : fns\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "12b26c525266464c8fcf1dc27598a3b2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c1452920a56f413baa682ed4fae50920": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "14ddb4219e0f448d91e2d811fcc8a43c": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_12b26c525266464c8fcf1dc27598a3b2",
+        "style": "IPY_MODEL_c1452920a56f413baa682ed4fae50920",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69465\" target=\"_blank\"> 21-69465</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-17 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['87']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> fns<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CROUS de Limoges<br>\n        <b>Ville :</b> LIMOGES<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Etanch\u00e9it\u00e9']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> travaux d'\u00e9tanch\u00e9it\u00e9 dans le cadre de la r\u00e9habilitation de la cit\u00e9 universitaire de l'aurence<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69465\" target=\"_blank\"> 21-69465</a><br>\n        <div>"
+      }
+    },
+    "a4b34fe4ab8f4b58966028401cd136d9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          48.112956,
+          6.797678
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4b6addc798054ba3a14968d0ddf43d60",
+        "title": "Vers GRANGES AUMONTZEY :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        MARCHE D'EXPLOITATION ET DE MAINTENANCE DES INSTALLATIONS DE CHAUFFAGE, DE VENTILATION, DE CLIMATISATION ET D'EAU CHAUDE SANITAIRE DES B\u00c2TIMENTS COMMUNAUX DE LA VILLE DE GRANGES-AUMONTZEY-.\n        \n        Nature : appeloffre\n        Famille : mapa\n        P\u00e9rim\u00e8tre : cmp2006\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "35f46d92ef5b461e99e48b1cefafc80a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5cf484fa9c174b3db2852e55660652a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4b6addc798054ba3a14968d0ddf43d60": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_35f46d92ef5b461e99e48b1cefafc80a",
+        "style": "IPY_MODEL_5cf484fa9c174b3db2852e55660652a5",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69417\" target=\"_blank\"> 21-69417</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-28 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['88']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> mapa<br>\n        <b>P\u00e9rim\u00e8tre :</b> cmp2006<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> COMMUNE DE GRANGES AUMONTZEY<br>\n        <b>Ville :</b> GRANGES AUMONTZEY<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> ['Maintenance']<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> MARCHE D'EXPLOITATION ET DE MAINTENANCE DES INSTALLATIONS DE CHAUFFAGE, DE VENTILATION, DE CLIMATISATION ET D'EAU CHAUDE SANITAIRE DES B\u00c2TIMENTS COMMUNAUX DE LA VILLE DE GRANGES-AUMONTZEY-.<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69417\" target=\"_blank\"> 21-69417</a><br>\n        <div>"
+      }
+    },
+    "d5981e4733a64d8b98c268c1a55e44fa": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.13.5",
+      "state": {
+        "draggable": false,
+        "location": [
+          14.470767,
+          -60.870184
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "popup": "IPY_MODEL_4dbfb6cc9a2641aaaf1241e572513aa5",
+        "title": "Vers LE MARIN :\n        Date de publication de l'annonce au Boamp : 2021-05-24 00:00:00\n        \n        \n        Objet du march\u00e9 :\n        Mission d'Assistance \u00e0 Ma\u00eetrise d'Ouvrage (Amo) pour l'\u00e9tude de faisabilit\u00e9 et la r\u00e9alisation des projets immobiliers des Centres Hospitaliers de Saint-Esprit et Ernest Wan-Ajouhu\n        \n        Nature : appeloffre\n        Famille : joue\n        P\u00e9rim\u00e8tre : directive24\n        Statut : initial\n        \n        Crit\u00e8res environnementaux : non\n        Crit\u00e8res sociaux : non\n        \n        Cliquer pour plus de d\u00e9tails et suivre un lien vers l'annonce sur boamp.fr.\n        "
+      }
+    },
+    "4d5405681d614d82bbffdf91bc6b448b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d1d493b11eb94aae837887eb7359fb80": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4dbfb6cc9a2641aaaf1241e572513aa5": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_4d5405681d614d82bbffdf91bc6b448b",
+        "style": "IPY_MODEL_d1d493b11eb94aae837887eb7359fb80",
+        "value": "<div style=\"background-color:white !important; padding:10px !important; min-width:400px !important;\">\n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69386\" target=\"_blank\"> 21-69386</a><br>\n        \n        <h2>Infos sur l'annonce</h2>    \n        <b>Date de publication :</b> 2021-05-24 00:00:00<br>\n        <b>Date de fin de diffusion :</b> 2021-06-25 00:00:00<br>\n        <b>D\u00e9partement de publication :</b> ['972']<br>\n        \n        <b>Nature :</b> appeloffre<br>\n        <b>Famille :</b> joue<br>\n        <b>P\u00e9rim\u00e8tre :</b> directive24<br>\n        <b>Statut :</b> initial<br>\n        <b>Crit\u00e8res environnementaux :</b> non<br>\n        <b>Crit\u00e8res sociaux :</b> non<br>\n        \n        <h2>Infos sur l'acheteur</h2>    \n        <b>D\u00e9nominatin de l'acheteur :</b> CH DU MARIN<br>\n        <b>Ville :</b> LE MARIN<br>        \n        \n        <h2>Infos sur le march\u00e9</h2>\n        <b>Libell\u00e9s descripteurs :</b> [\"Assistance \u00e0 ma\u00eetrise d'ouvrage\"]<br>        \n        <b>R\u00e9sum\u00e9 de l'objet :</b> Mission d'Assistance \u00e0 Ma\u00eetrise d'Ouvrage (Amo) pour l'\u00e9tude de faisabilit\u00e9 et la r\u00e9alisation des projets immobiliers des Centres Hospitaliers de Saint-Esprit et Ernest Wan-Ajouhu<br>\n        \n        <b>Consulter l'annonce compl\u00e8te sur BOAMP.fr \u25ba</b><a href=\"https://www.boamp.fr/avis/detail/21-69386\" target=\"_blank\"> 21-69386</a><br>\n        <div>"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "e2f4dd79eb794110bde93ee2dd178516"}
+</script>
+
+</body>
+</html>
